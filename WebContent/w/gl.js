@@ -1,4 +1,25 @@
 /**
+ * 注册加载器.根据扩展名.
+ * G_register_Loader.regImgLoader(url);
+ */
+var G_register_Loader={
+		extend_Img:[".png", ".jpg", ".bmp",".jpeg",".gif", ".ico", ".tiff", ".webp"].join(","),
+		/**
+		 * 注册图片加载器
+		 * @param url
+		 */
+		regImgLoader:function(url){
+			type = cc.path.extname(url);
+			type = type ? type.toLowerCase() : "";
+			
+			if(this.extend_Img.indexOf(type)==-1){
+				this.extend_Img+=","+type;
+				cc.loader.register(type, cc._imgLoader);
+			}
+		}
+}
+
+/**
  * 异步加载js
  * @param url
  * @param callback

@@ -22,11 +22,11 @@ var Mp3Sprite = cc.Sprite.extend({
                     if(!window.audio_mp3||window.audio_mp3.paused){
                     	 
                     	alert("打开音乐");
-                    	that.setTexture(res.pause_mp3);
+                    	that.setTexture(res.play_mp3);
                     	  window.audio_mp3.play();
                     }else{
                     	 alert("关闭音乐");
-                    	 that.setTexture(res.play_mp3);
+                    	 that.setTexture(res.pause_mp3);
                     	  window.audio_mp3.pause();
                     }
                     return true;
