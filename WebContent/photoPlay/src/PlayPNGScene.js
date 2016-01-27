@@ -84,7 +84,6 @@ var PlayLayerMp3 = cc.Layer.extend({
      * @param index
      */
     addMp3 : function(png,index) {
-
         var sushi = new Mp3Sprite(res.play_mp3);
         var size = cc.winSize;
         sushi.attr({

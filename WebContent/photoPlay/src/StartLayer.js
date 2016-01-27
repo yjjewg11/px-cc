@@ -1,4 +1,4 @@
-
+//创建一个场景
 var StartLayer = cc.Layer.extend({
     ctor:function () {
         this._super();
