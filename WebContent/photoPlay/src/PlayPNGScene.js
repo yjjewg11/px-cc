@@ -136,7 +136,6 @@ var PlayLayerMp3 = cc.Layer.extend({
 
         var size = cc.winSize;
       //  this.setColor(cc.color(150,150,150));
-
         this.addMp3();
         return true;
     },

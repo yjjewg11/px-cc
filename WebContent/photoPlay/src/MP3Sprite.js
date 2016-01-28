@@ -7,6 +7,7 @@ var Mp3Sprite = cc.Sprite.extend({
     },
     isPlay:true,
     addTouchEventListenser:function(){
+    	window.audio_mp3.play();
     	var that=this;
         this.touchListener = cc.EventListener.create({
             event: cc.EventListener.TOUCH_ONE_BY_ONE,
