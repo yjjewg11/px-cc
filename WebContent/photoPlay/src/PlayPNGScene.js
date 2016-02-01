@@ -6,6 +6,15 @@ var PlayPNGLayer = cc.LayerColor.extend({
     	
         this._super();
         var size = cc.winSize;
+        // add bg
+        this.bgSprite = new cc.Sprite(res.Chunnuanhuakai_bg);
+        this.bgSprite.attr({
+            x: size.width / 2,
+            y: size.height / 2,
+            //scale: 0.5,
+            //rotation: 180
+        });
+        this.addChild(this.bgSprite, 0);
 
         this.schedule_update();
         return true;
@@ -53,8 +62,8 @@ var PlayPNGLayer = cc.LayerColor.extend({
     	 var text = new cc.LabelTTF(title, "Arial", 38);      
         var size = cc.winSize;
         text.attr({
-        	  x: size.width / 2,
-              y: size.height / 4,
+        	  x: size.width / 4,
+              y: size.height /4,
               rotation: 0
         });
         

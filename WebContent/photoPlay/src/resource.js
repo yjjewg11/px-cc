@@ -1,5 +1,6 @@
    var res = {
         BackGround_png : "res/background.png",
+        Chunnuanhuakai_bg:"res/cnhk.png",
         Sushi_png : "res/sushi.png",
         Sushi_plist : "res/sushi.plist",
         Start_N_png : "res/start_N.png",
