@@ -43,15 +43,31 @@ var PlayPNGLayer = cc.LayerColor.extend({
 
         this.addChild(sushi,index);
         
-        var dorpAction = cc.FadeTo.create(2, 255);
-        sushi.runAction(dorpAction);
+
+        this.modMovieItem(1,sushi);
         
+//        //动画显示
+//        this.scheduleOnce(this.schedule_update,4);
+//        //定时销毁
+//        this.scheduleOnce(function(){this.schedule_delete_Sprite(sushi);},6);
+        
+    },
+    
+    //动画模板
+    modMovieItem : function(type,sushi) { 
+    	DorpAction.runAction(sushi);
+    	//ScaleRotateAction.runAction(sushi);
         //动画显示
         this.scheduleOnce(this.schedule_update,4);
         //定时销毁
         this.scheduleOnce(function(){this.schedule_delete_Sprite(sushi);},6);
         
     },
+    
+    
+    
+    
+    
     /*
      *创建文本内容 
      * 
@@ -59,7 +75,7 @@ var PlayPNGLayer = cc.LayerColor.extend({
      * */
     
     addTitle : function(title) {	
-    	 var text = new cc.LabelTTF(title, "Arial", 38);      
+    	var text = new cc.LabelTTF(title, "Arial", 38);      
         var size = cc.winSize;
         text.attr({
         	  x: size.width / 4,
@@ -68,48 +84,40 @@ var PlayPNGLayer = cc.LayerColor.extend({
         });
         
 
-        this.addChild(text,11);
-   
-
-        
+        this.addChild(text,11);      
+    },
+//    /**
+//     * 
+//     * 添加精灵（图片）
+//     * @param png
+//     * @param index
+//     */
+//    addPNG1 : function(png,index) {
+//
+//        var sushi = new cc.Sprite(png);
+//        var size = cc.winSize;
+//        sushi.attr({
+//        	  x: size.width / 2,
+//              y: size.height / 2,
+//              opacity:0,
+//              scale:0.1,
+//              rotation: 0
+//        });
+//        
+//
+//        this.addChild(sushi,index);
+//        
+//        var dorpAction = cc.FadeTo.create(2, 255);
+//        sushi.runAction(dorpAction);
+//        
 //        //动画显示
 //        this.scheduleOnce(this.schedule_update,4);
 //        //定时销毁
 //        this.scheduleOnce(function(){this.schedule_delete_Sprite(sushi);},6);
-        
-    },
-    /**
-     * 
-     * 添加精灵（图片）
-     * @param png
-     * @param index
-     */
-    addPNG1 : function(png,index) {
-
-        var sushi = new cc.Sprite(png);
-        var size = cc.winSize;
-        sushi.attr({
-        	  x: size.width / 2,
-              y: size.height / 2,
-              opacity:0,
-              scale:0.1,
-              rotation: 0
-        });
-        
-
-        this.addChild(sushi,index);
-        
-        var dorpAction = cc.FadeTo.create(2, 255);
-        sushi.runAction(dorpAction);
-        
-        //动画显示
-        this.scheduleOnce(this.schedule_update,4);
-        //定时销毁
-        this.scheduleOnce(function(){this.schedule_delete_Sprite(sushi);},6);
-        
-    }
+//        
+//    },
     //销毁已显示（精灵）图片
-    ,schedule_delete_Sprite : function(spr) {
+    schedule_delete_Sprite : function(spr) {
     	
     	
     	  var dorpAction = cc.FadeTo.create(2, 100);

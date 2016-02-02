@@ -6,7 +6,8 @@
     "jsList"        : [
     "data.js",
     "src/resource.js",
-    
+    "src/action/ScaleRotateAction.js",
+    "src/action/DorpAction.js",
         "src/MP3Sprite.js",
     "src/PlayPNGScene.js"
     ]
