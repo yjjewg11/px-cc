@@ -1,0 +1,38 @@
+{
+  "ID": "9f3710c8-ac20-42df-a082-9f62dcac6428",
+  "Version": "3.10.0.0",
+  "Name": "Skeleton",
+  "Content": {
+    "Content": {
+      "Animation": {
+        "Duration": 0,
+        "Speed": 1.0,
+        "Timelines": [],
+        "ctype": "TimelineActionData"
+      },
+      "AnimationList": [],
+      "ObjectData": {
+        "Length": 20.0,
+        "Position": {
+          "X": 0.0,
+          "Y": 0.0
+        },
+        "Scale": {
+          "ScaleX": 1.0,
+          "ScaleY": 1.0
+        },
+        "CColor": {},
+        "Tag": 26,
+        "Size": {
+          "X": 20.0,
+          "Y": 20.0
+        },
+        "Name": "Skeleton",
+        "ctype": "SkeletonNodeObjectData"
+      },
+      "UsedResources": [],
+      "ctype": "GameFileData"
+    }
+  },
+  "Type": "Skeleton"
+}

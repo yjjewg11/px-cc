@@ -193,7 +193,7 @@ var PlayPNGScene = cc.Scene.extend({
         var layer = new PlayPNGLayer();
         this.addChild(layer,0);
         
-      
-        
+        var pauseLayer=new PauseLayer();	
+        this.addChild(pauseLayer,1);
     }
 });
