@@ -43,7 +43,8 @@ function loadMovie(getFPMovie){
 }
 
 window.onload = function(){
-	
+	var MUSIC_FILE = "res/冬之韵.mp3";
+
 		//var t=new Date().getTime();
 		var movie_uuid="1";
 	   var url="http://120.25.212.44/px-mobile/rest/share/getFPMovie.js?movie_uuid="+movie_uuid;//+"&t="+t;

@@ -1,0 +1,243 @@
+{
+  "ID": "a2ee0952-26b5-49ae-8bf9-4f1d6279b798",
+  "Version": "3.10.0.0",
+  "Name": "MainScene",
+  "Content": {
+    "Content": {
+      "Animation": {
+        "Duration": 0,
+        "Speed": 1.0,
+        "Timelines": [],
+        "ctype": "TimelineActionData"
+      },
+      "AnimationList": [],
+      "ObjectData": {
+        "Children": [
+          {
+            "FileData": {
+              "Type": "Normal",
+              "Path": "background.png",
+              "Plist": ""
+            },
+            "BlendFunc": {
+              "Src": 1,
+              "Dst": 771
+            },
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 159.999,
+              "Y": 256.2049
+            },
+            "Scale": {
+              "ScaleX": 0.5216,
+              "ScaleY": 0.4017
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.5,
+              "Y": 0.5338
+            },
+            "PreSize": {
+              "X": 2.0,
+              "Y": 2.3667
+            },
+            "LeftMargin": -160.001,
+            "RightMargin": -159.999,
+            "TopMargin": -344.2049,
+            "BottomMargin": -311.7951,
+            "Tag": 22,
+            "ActionTag": -931728080,
+            "Size": {
+              "X": 640.0,
+              "Y": 1136.0
+            },
+            "Name": "background",
+            "ctype": "SpriteObjectData"
+          },
+          {
+            "FileData": {
+              "Type": "Normal",
+              "Path": "play_mp3.png",
+              "Plist": ""
+            },
+            "BlendFunc": {
+              "Src": 770,
+              "Dst": 771
+            },
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 268.0769,
+              "Y": 428.7816
+            },
+            "Scale": {
+              "ScaleX": 1.4368,
+              "ScaleY": 1.517
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.8377,
+              "Y": 0.8933
+            },
+            "PreSize": {
+              "X": 0.1813,
+              "Y": 0.1021
+            },
+            "LeftMargin": 239.0769,
+            "RightMargin": 22.9231,
+            "TopMargin": 26.7184,
+            "BottomMargin": 404.2816,
+            "Tag": 23,
+            "ActionTag": 1874402475,
+            "Size": {
+              "X": 58.0,
+              "Y": 49.0
+            },
+            "Name": "play_mp3",
+            "ctype": "SpriteObjectData"
+          },
+          {
+            "FontSize": 14,
+            "ButtonText": "Button",
+            "TextColor": {
+              "R": 65,
+              "G": 65,
+              "B": 70
+            },
+            "DisabledFileData": {
+              "Type": "Default",
+              "Path": "Default/Button_Disable.png",
+              "Plist": ""
+            },
+            "PressedFileData": {
+              "Type": "Normal",
+              "Path": "start_S.png",
+              "Plist": ""
+            },
+            "NormalFileData": {
+              "Type": "Normal",
+              "Path": "start_N.png",
+              "Plist": ""
+            },
+            "Scale9Enable": true,
+            "Scale9OriginX": 15,
+            "Scale9OriginY": 11,
+            "Scale9Width": 610,
+            "Scale9Height": 178,
+            "OutlineColor": {
+              "G": 0,
+              "B": 0
+            },
+            "ShadowColor": {
+              "R": 110,
+              "G": 110,
+              "B": 110
+            },
+            "ShadowOffsetX": 2.0,
+            "ShadowOffsetY": -2.0,
+            "TouchEnable": true,
+            "AnchorPoint": {
+              "ScaleX": 0.2265,
+              "ScaleY": 1.64
+            },
+            "Position": {
+              "X": 97.501,
+              "Y": 245.7178
+            },
+            "Scale": {
+              "ScaleX": 0.3944,
+              "ScaleY": 0.5185
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.3047,
+              "Y": 0.5119
+            },
+            "PreSize": {
+              "X": 2.0,
+              "Y": 0.4167
+            },
+            "LeftMargin": -47.459,
+            "RightMargin": -272.541,
+            "TopMargin": 362.2822,
+            "BottomMargin": -82.2822,
+            "Tag": 25,
+            "ActionTag": 1515397013,
+            "Size": {
+              "X": 640.0,
+              "Y": 200.0
+            },
+            "Name": "Button_1",
+            "ctype": "ButtonObjectData"
+          },
+          {
+            "FileData": {
+              "Type": "Default",
+              "Path": "Default/defaultParticle.plist",
+              "Plist": ""
+            },
+            "BlendFunc": {
+              "Src": 775,
+              "Dst": 1
+            },
+            "AnchorPoint": {},
+            "Position": {
+              "X": 158.7648,
+              "Y": 284.0293
+            },
+            "Scale": {
+              "ScaleX": 3.0836,
+              "ScaleY": 2.9169
+            },
+            "CColor": {},
+            "IconVisible": true,
+            "PrePosition": {
+              "X": 0.4961,
+              "Y": 0.5917
+            },
+            "PreSize": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "LeftMargin": 158.7648,
+            "RightMargin": 161.2352,
+            "TopMargin": 195.9707,
+            "BottomMargin": 284.0293,
+            "Tag": 5,
+            "ActionTag": 400658842,
+            "Size": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "Name": "Particle_1",
+            "ctype": "ParticleObjectData"
+          }
+        ],
+        "Size": {
+          "X": 320.0,
+          "Y": 480.0
+        },
+        "Name": "Scene",
+        "ctype": "SingleNodeObjectData"
+      },
+      "UsedResources": [
+        "background.png",
+        "Default/Button_Disable.png",
+        "Default/defaultParticle.plist",
+        "play_mp3.png",
+        "start_N.png",
+        "start_S.png"
+      ],
+      "ctype": "GameFileData"
+    }
+  },
+  "Type": "Scene"
+}
