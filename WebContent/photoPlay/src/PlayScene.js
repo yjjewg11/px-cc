@@ -11,7 +11,7 @@ var PlayLayer = cc.Layer.extend({
             x: size.width / 2,
             y: size.height / 2,
             //scale: 0.5,
-            rotation: 180
+            //rotation: 180
         });
         this.addChild(this.bgSprite, 0);
 

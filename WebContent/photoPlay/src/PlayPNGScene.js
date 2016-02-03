@@ -6,6 +6,15 @@ var PlayPNGLayer = cc.LayerColor.extend({
     	
         this._super();
         var size = cc.winSize;
+        // add bg
+        this.bgSprite = new cc.Sprite(res.Chunnuanhuakai_bg);
+        this.bgSprite.attr({
+            x: size.width / 2,
+            y: size.height / 2,
+            //scale: 0.5,
+            //rotation: 180
+        });
+        this.addChild(this.bgSprite, 0);
 
         this.schedule_update();
         return true;
@@ -34,34 +43,8 @@ var PlayPNGLayer = cc.LayerColor.extend({
 
         this.addChild(sushi,index);
         
-        var dorpAction = cc.FadeTo.create(2, 255);
-        sushi.runAction(dorpAction);
-        
-        //动画显示
-        this.scheduleOnce(this.schedule_update,4);
-        //定时销毁
-        this.scheduleOnce(function(){this.schedule_delete_Sprite(sushi);},6);
-        
-    },
-    /*
-     *创建文本内容 
-     * 
-     * setString
-     * */
-    
-    addTitle : function(title) {	
-    	 var text = new cc.LabelTTF(title, "Arial", 38);      
-        var size = cc.winSize;
-        text.attr({
-        	  x: size.width / 2,
-              y: size.height / 4,
-              rotation: 0
-        });
-        
 
-        this.addChild(text,11);
-   
-
+        this.modMovieItem(1,sushi);
         
 //        //动画显示
 //        this.scheduleOnce(this.schedule_update,4);
@@ -69,38 +52,72 @@ var PlayPNGLayer = cc.LayerColor.extend({
 //        this.scheduleOnce(function(){this.schedule_delete_Sprite(sushi);},6);
         
     },
-    /**
-     * 
-     * 添加精灵（图片）
-     * @param png
-     * @param index
-     */
-    addPNG1 : function(png,index) {
-
-        var sushi = new cc.Sprite(png);
-        var size = cc.winSize;
-        sushi.attr({
-        	  x: size.width / 2,
-              y: size.height / 2,
-              opacity:0,
-              scale:0.1,
-              rotation: 0
-        });
-        
-
-        this.addChild(sushi,index);
-        
-        var dorpAction = cc.FadeTo.create(2, 255);
-        sushi.runAction(dorpAction);
-        
+    
+    //动画模板
+    modMovieItem : function(type,sushi) { 
+    	DorpAction.runAction(sushi);
+    	//ScaleRotateAction.runAction(sushi);
         //动画显示
         this.scheduleOnce(this.schedule_update,4);
         //定时销毁
         this.scheduleOnce(function(){this.schedule_delete_Sprite(sushi);},6);
         
-    }
+    },
+    
+    
+    
+    
+    
+    /*
+     *创建文本内容 
+     * 
+     * setString
+     * */
+    
+    addTitle : function(title) {	
+    	var text = new cc.LabelTTF(title, "Arial", 38);      
+        var size = cc.winSize;
+        text.attr({
+        	  x: size.width / 4,
+              y: size.height /4,
+              rotation: 0
+        });
+        
+
+        this.addChild(text,11);      
+    },
+//    /**
+//     * 
+//     * 添加精灵（图片）
+//     * @param png
+//     * @param index
+//     */
+//    addPNG1 : function(png,index) {
+//
+//        var sushi = new cc.Sprite(png);
+//        var size = cc.winSize;
+//        sushi.attr({
+//        	  x: size.width / 2,
+//              y: size.height / 2,
+//              opacity:0,
+//              scale:0.1,
+//              rotation: 0
+//        });
+//        
+//
+//        this.addChild(sushi,index);
+//        
+//        var dorpAction = cc.FadeTo.create(2, 255);
+//        sushi.runAction(dorpAction);
+//        
+//        //动画显示
+//        this.scheduleOnce(this.schedule_update,4);
+//        //定时销毁
+//        this.scheduleOnce(function(){this.schedule_delete_Sprite(sushi);},6);
+//        
+//    },
     //销毁已显示（精灵）图片
-    ,schedule_delete_Sprite : function(spr) {
+    schedule_delete_Sprite : function(spr) {
     	
     	
     	  var dorpAction = cc.FadeTo.create(2, 100);
