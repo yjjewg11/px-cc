@@ -33,9 +33,9 @@
               "Plist": ""
             },
             "NormalFileData": {
-              "Type": "Normal",
+              "Type": "MarkedSubImage",
               "Path": "movie_start_N.png",
-              "Plist": ""
+              "Plist": "Plist.plist"
             },
             "Scale9Enable": true,
             "Scale9OriginX": 15,
@@ -76,10 +76,10 @@
               "X": 0.4814,
               "Y": 0.148
             },
-            "LeftMargin": 232.2086,
-            "RightMargin": 99.6815,
-            "TopMargin": 406.9506,
-            "BottomMargin": 410.9328,
+            "LeftMargin": 232.2173,
+            "RightMargin": 99.6727,
+            "TopMargin": 406.957,
+            "BottomMargin": 410.9263,
             "Tag": 43,
             "ActionTag": 1134683173,
             "Size": {
@@ -108,9 +108,9 @@
               "Plist": ""
             },
             "NormalFileData": {
-              "Type": "Normal",
+              "Type": "MarkedSubImage",
               "Path": "movie_play_S.png",
-              "Plist": ""
+              "Plist": "Plist.plist"
             },
             "Scale9Enable": true,
             "Scale9OriginX": 15,
@@ -134,8 +134,8 @@
               "ScaleY": 1.0
             },
             "Position": {
-              "X": 631.0219,
-              "Y": 853.5873
+              "X": 622.1238,
+              "Y": 853.5878
             },
             "Scale": {
               "ScaleX": 0.5655,
@@ -144,17 +144,17 @@
             "CColor": {},
             "IconVisible": false,
             "PrePosition": {
-              "X": 0.986,
+              "X": 0.9721,
               "Y": 0.8892
             },
             "PreSize": {
               "X": 0.2094,
               "Y": 0.1167
             },
-            "LeftMargin": 497.0219,
-            "RightMargin": 8.9781,
-            "TopMargin": 106.4127,
-            "BottomMargin": 741.5873,
+            "LeftMargin": 488.1238,
+            "RightMargin": 17.8762,
+            "TopMargin": 106.4122,
+            "BottomMargin": 741.5878,
             "Tag": 44,
             "ActionTag": -933138833,
             "Size": {
@@ -178,14 +178,14 @@
               "Plist": ""
             },
             "PressedFileData": {
-              "Type": "Normal",
+              "Type": "MarkedSubImage",
               "Path": "mp3_play.png",
-              "Plist": ""
+              "Plist": "Plist.plist"
             },
             "NormalFileData": {
-              "Type": "Normal",
+              "Type": "MarkedSubImage",
               "Path": "mp3_play.png",
-              "Plist": ""
+              "Plist": "Plist.plist"
             },
             "Scale9Enable": true,
             "Scale9OriginX": 15,
@@ -210,8 +210,8 @@
               "ScaleY": 1.0
             },
             "Position": {
-              "X": 611.8571,
-              "Y": 950.9296
+              "X": 623.7325,
+              "Y": 942.0317
             },
             "Scale": {
               "ScaleX": 1.54,
@@ -220,22 +220,22 @@
             "CColor": {},
             "IconVisible": false,
             "PrePosition": {
-              "X": 0.956,
-              "Y": 0.9906
+              "X": 0.9746,
+              "Y": 0.9813
             },
             "PreSize": {
-              "X": 0.0521,
-              "Y": 0.0521
+              "X": 0.0671,
+              "Y": 0.05
             },
-            "LeftMargin": 578.5237,
-            "RightMargin": 28.1429,
-            "TopMargin": 9.0704,
-            "BottomMargin": 900.9296,
+            "LeftMargin": 580.7581,
+            "RightMargin": 16.2675,
+            "TopMargin": 17.9683,
+            "BottomMargin": 894.0604,
             "Tag": 45,
             "ActionTag": -1451660542,
             "Size": {
-              "X": 33.3333,
-              "Y": 50.0
+              "X": 42.9744,
+              "Y": 47.9713
             },
             "Name": "Button_mp3",
             "ctype": "ButtonObjectData"
@@ -251,9 +251,8 @@
       "UsedResources": [
         "Default/Button_Disable.png",
         "Default/Button_Press.png",
-        "movie_play_S.png",
-        "movie_start_N.png",
-        "mp3_play.png"
+        "Plist.plist",
+        "Plist.png"
       ],
       "ctype": "GameFileData"
     }

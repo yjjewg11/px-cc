@@ -48,3 +48,19 @@ function loadJS(url,callback,charset)
 	script.src = url;
 	try {document.getElementsByTagName("head")[0].appendChild(script);} catch (e) {}
 }
+
+
+//队列
+function ArrayQueue() {
+  this.queue = [];
+  //入队列
+  this.push = function(o) {
+  	this.queue.unshift(o);
+  }
+  //出队列
+  this.pop = function() {
+  	return this.queue.pop();
+
+  }
+  
+} 

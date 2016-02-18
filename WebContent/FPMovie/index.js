@@ -100,7 +100,7 @@ function loadMovie(getFPMovie){
 	    }, this);
 	};
 	cc.game.run();
-	
+	  
 }
 
 window.onload = function(){
@@ -108,14 +108,12 @@ window.onload = function(){
 
 		//var t=new Date().getTime();
 		var movie_uuid="1";
-	   var url="http://120.25.212.44/px-mobile/rest/share/getFPMovie.js?movie_uuid="+movie_uuid;//+"&t="+t;
-		 loadJS(url,function(){
+	   PlayPNGService.loadPNG(movie_uuid,function(){
 			 if(getFPMovie){
 				 loadMovie(getFPMovie);
 			 }
 		 });
 		 
-	//window.audio_mp3.play();
-	//
+
 
           };

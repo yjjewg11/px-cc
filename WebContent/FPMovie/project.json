@@ -5,8 +5,13 @@
     "renderMode"    : 1,
     "jsList"        : [
     "src/resource.js",
+    "src/BackgroundLayer.js",
      "src/ToolbarControl.js",
-      "src/MainLayer.js",
+      "src/ToolbarLayer.js",
+      "src/PlayPNGLayer.js",
+       "src/PlayPNGService.js",
+        "src/action/DorpAction.js",
+         "src/action/ScaleRotateAction.js",
         "src/MainScene.js"
     ]
 }
