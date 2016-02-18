@@ -20,7 +20,6 @@ var PlayPNGLayer = cc.LayerColor.extend({
         return true;
     },
     /**
-     * 
      * 添加精灵（图片）
      * @param png
      * @param index
@@ -49,13 +48,18 @@ var PlayPNGLayer = cc.LayerColor.extend({
 //        //动画显示
 //        this.scheduleOnce(this.schedule_update,4);
 //        //定时销毁
-//        this.scheduleOnce(function(){this.schedule_delete_Sprite(sushi);},6);
-        
+//        this.scheduleOnce(function(){this.schedule_delete_Sprite(sushi);},6);        
     },
     
     //动画模板
     modMovieItem : function(type,sushi) { 
-    	DorpAction.runAction(sushi);
+    	 var type=Math.floor(Math.random()*2+1);
+    	 if(type==1){
+    		 DorpAction.runAction(sushi);
+    	 }else{
+    		 ScaleRotateAction.runAction(sushi);
+    	 }
+    	//DorpAction.runAction(sushi);
     	//ScaleRotateAction.runAction(sushi);
         //动画显示
         this.scheduleOnce(this.schedule_update,4);
