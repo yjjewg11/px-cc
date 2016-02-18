@@ -21,7 +21,7 @@ var ToolbarLayer = cc.Layer.extend({
        
       
       //背景音乐按钮
-        var button_mp3 = ccui.helper.seekWidgetByName(mainscene, "Button_mp3");
+        var button_mp3 = ccui.helper.seekWidgetByName(toolbarLayer, "Button_mp3");
         //绑定事件
         button_mp3.addTouchEventListener(function(sender,type){
         	if(type==ccui.Widget.TOUCH_ENDED){
@@ -31,9 +31,9 @@ var ToolbarLayer = cc.Layer.extend({
         });
         
       //开始按钮(中间)
-        var button_start = ccui.helper.seekWidgetByName(mainscene, "Button_start");
+        var button_start = ccui.helper.seekWidgetByName(toolbarLayer, "Button_start");
         //暂停,开始按钮(左上).
-        var Button_movie = ccui.helper.seekWidgetByName(mainscene, "Button_movie");
+        var Button_movie = ccui.helper.seekWidgetByName(toolbarLayer, "Button_movie");
         //绑定事件
         button_start.addTouchEventListener(function(sender,type){
         	if(type==ccui.Widget.TOUCH_ENDED){
