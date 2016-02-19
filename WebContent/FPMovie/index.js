@@ -25,7 +25,6 @@ function loadMovie(getFPMovie){
 	@Column
 	private Integer status=0;//类型'0:发布,1:未发布.2:屏蔽',
 	 */
-	var mp3=getFPMovie.data.mp3;
 	var title=getFPMovie.data.title;
 	var template=getFPMovie.data.template;
 	//alert(title);
@@ -104,10 +103,8 @@ function loadMovie(getFPMovie){
 }
 
 window.onload = function(){
-	var MUSIC_FILE = "res/冬之韵.mp3";
-
-		//var t=new Date().getTime();
-		var movie_uuid="1";
+		var movie_uuid=getUrlParam("movie_uuid");
+		if(!movie_uuid)movie_uuid="1";
 	   PlayPNGService.loadPNG(movie_uuid,function(){
 			 if(getFPMovie){
 				 loadMovie(getFPMovie);

@@ -34,11 +34,13 @@ var ToolbarLayer = cc.Layer.extend({
         var button_start = ccui.helper.seekWidgetByName(toolbarLayer, "Button_start");
         //暂停,开始按钮(左上).
         var Button_movie = ccui.helper.seekWidgetByName(toolbarLayer, "Button_movie");
+        
+        ToolbarControl.bindWidget(button_start,Button_movie,button_mp3);
         //绑定事件
         button_start.addTouchEventListener(function(sender,type){
         	if(type==ccui.Widget.TOUCH_ENDED){
         		
-        		ToolbarControl.gameStartOrReplay(button_start,Button_movie);
+        		ToolbarControl.gameStartOrReplay(button_start,Button_movie,button_mp3);
         	}
         	
         });
@@ -51,6 +53,31 @@ var ToolbarLayer = cc.Layer.extend({
         	}
         	
         });
+        
+     
+        
+        this.touchListener = cc.EventListener.create({
+            event: cc.EventListener.TOUCH_ONE_BY_ONE,
+            // When "swallow touches" is true, then returning 'true' from the onTouchBegan method will "swallow" the touch event, preventing other listeners from using it.
+            swallowTouches: true,
+            //onTouchBegan event callback function                      
+            onTouchBegan: function (touch, event) { 
+                var pos = touch.getLocation();
+                var target = event.getCurrentTarget();  
+                if ( cc.rectContainsPoint(target.getBoundingBox(),pos)) {
+                    cc.log("touched")
+                    return true;
+                }
+                return false;
+            },
+            onTouchEnded: function (touch, event) { 
+            	ToolbarControl.gamePause();
+            	 return true;
+            }
+        	
+        });
+        
+        cc.eventManager.addListener(this.touchListener,this);
         //自动播放
         //ToolbarControl.gamePlay();
         
