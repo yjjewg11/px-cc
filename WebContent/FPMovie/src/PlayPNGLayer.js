@@ -92,14 +92,15 @@ var PlayPNGLayer = cc.Layer.extend({
     	  var dorpAction = cc.FadeTo.create(2, 100);
     	  spr.runAction(dorpAction);
     	 
-    	  spr.removeFromParent();
-    	  // this.scheduleOnce(function(){ spr.removeFromParent();},3);
+    	//  spr.removeFromParent();
+    	   this.scheduleOnce(function(){ spr.removeFromParent();},3);
      
     }
     //获取图片列表，进行依次显示
     ,schedule_update : function() {
     	
-    	this.schedule_delete_Sprite( this.spriteQueue.pop());
+    	var popObj=this.spriteQueue.pop();
+    
     	var list=getFPMovie.list.data;
     	if(this.index<list.length){
     		//{"path":"http://img.wenjienet.com/fp/2016/69629a2a-54a7-49bc-9823-4b92e9c6423a.jpg@108h","address":null,"note":null},
@@ -108,10 +109,12 @@ var PlayPNGLayer = cc.Layer.extend({
     		this.addTitle(getFPMovie.data.title);
     		//this.addPNG1(data.list[this.index],this.index);
     		this.index++;
+    		
     	}else{
     		 this.unschedule(this.schedule_update);
     		ToolbarControl.gameEnd();
     	}
+    	this.schedule_delete_Sprite(popObj );
         
     }
 });
