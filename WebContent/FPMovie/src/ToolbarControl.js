@@ -6,6 +6,7 @@ var ToolbarControl={
 		Button_movie:null,
 		playPNGLayer :null,
 		button_mp3:null,
+		
 		//背景音乐静音
 		mp3Mute:false,
 		/**
@@ -27,7 +28,23 @@ var ToolbarControl={
 		//	alert("gameEnd");
 			this.Button_movie.loadTextures("movie_play_S.png","movie_play_S.png","",ccui.Widget.PLIST_TEXTURE);
 			this.button_start.setVisible(true);
+			  window.audio_mp3.pause();
+			LayerManage.showGameEndLayer();
 			this.isPlayGame=false;
+		},
+		/**
+		 * ToolbarControl.gameEnd();
+		 * 电影开始播放,暂停
+		 */
+		shareTo:function(){
+			alert("f分享");
+		},
+		/**
+		 * ToolbarControl.gameEnd();
+		 * 电影开始播放,暂停
+		 */
+		makeMovie:function(){
+			alert("制作一个");
 		},
 		/**
 		 * 暂停
@@ -54,23 +71,30 @@ var ToolbarControl={
 			}
 			
 		},
-		
+		/**
+		 * 重头播放
+		 */
+		gameReplay:function(){			
+			LayerManage.hideGameEndLayer();
+			this.gameStartOrReplay();
+		},
 		/**
 		 * 重头播放或start
 		 */
 		gameStartOrReplay:function(button_start,Button_movie,button_mp3){			
-			Button_movie.loadTextures("movie_pause_S.png","movie_pause_S.png","",ccui.Widget.PLIST_TEXTURE);			
 			//alert("game_replay");
-			this.button_start=button_start;
-			this.Button_movie=Button_movie;
-			this.button_mp3=button_mp3;
+			if(button_start)this.button_start=button_start;
+			if(Button_movie)this.Button_movie=Button_movie;
+			if(button_mp3)this.button_mp3=button_mp3;
 			
-			ToolbarControl.bgAudioLoad(getFPMovie.data.mp3);
+		
+			this.Button_movie.loadTextures("movie_pause_S.png","movie_pause_S.png","",ccui.Widget.PLIST_TEXTURE);			
 			
-			button_start.setVisible(false);
+			this.button_start.setVisible(false);
 			this.isPlayGame=true;
+			ToolbarControl.bgAudioLoad(getFPMovie.data.mp3);
 			if(this.mp3Mute==false){
-				 window.audio_mp3.play();
+				ToolbarControl.bgAudioPlay();
 			}
 			 
 			var scene= cc.director.getRunningScene();
@@ -90,12 +114,7 @@ var ToolbarControl={
 			if(window.audio_mp3.src!=mp3){
 				window.audio_mp3.src=mp3;
 			}
-			 if(!window.audio_mp3||window.audio_mp3.paused){
-            	 
-             //	alert("打开音乐");
-				 this.button_mp3.loadTextures("mp3_play.png","mp3_play.png","",ccui.Widget.PLIST_TEXTURE);
-             	  window.audio_mp3.play();
-             }
+			
 		},
 		/**
 		 * 背景音乐:播放

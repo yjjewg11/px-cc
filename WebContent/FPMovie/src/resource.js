@@ -5,7 +5,8 @@ var res = {
 //		bgAudioPause : "res/toobar/mp3_pause.png",
 //		gamePlay : "res/toobar/movie_play_S.png",
 //		gamePause : "res/toobar/mp3_pause.png",		
-		ToolbarLayer : "res/toobar/ToolbarLayer.json"
+		ToolbarLayer : "res/toobar/ToolbarLayer.json",
+		GameEndScene : "res/gameEnd/GameEndScene.json"
 };
 
 var g_resources = [];
