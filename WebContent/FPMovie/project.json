@@ -13,6 +13,8 @@
         "src/action/DorpAction.js",
         "src/action/LongicAction.js",
          "src/action/ScaleRotateAction.js",
+          "src/LayerManage.js",
+            "src/GameEndLayer.js",
         "src/MainScene.js"
     ]
 }

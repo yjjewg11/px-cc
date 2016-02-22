@@ -95,7 +95,7 @@ function loadMovie(getFPMovie){
 	    cc.LoaderScene.preload(g_resources, function () {
 	        cc.director.runScene(new MainScene());
 	       // cc.director.runScene(new MyActionScene());
-	        
+	       // PlayPNGService.loadFile();
 	    }, this);
 	};
 	cc.game.run();
@@ -107,6 +107,11 @@ window.onload = function(){
 		if(!movie_uuid)movie_uuid="1";
 	   PlayPNGService.loadPNG(movie_uuid,function(){
 			 if(getFPMovie){
+					if(getFPMovie.ResMsg.status!="success"){
+						alert(getFPMovie.ResMsg.message);
+						return;
+					}
+					
 				 loadMovie(getFPMovie);
 			 }
 		 });
