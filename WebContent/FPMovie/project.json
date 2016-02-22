@@ -11,6 +11,7 @@
       "src/PlayPNGLayer.js",
        "src/PlayPNGService.js",
         "src/action/DorpAction.js",
+        "src/action/LongicAction.js",
          "src/action/ScaleRotateAction.js",
         "src/MainScene.js"
     ]
