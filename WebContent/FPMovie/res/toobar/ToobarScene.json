@@ -1,7 +1,7 @@
 {
-  "ID": "5972b118-1774-4aa4-946f-c4c3f618b067",
+  "ID": "5efc2913-5d7b-4b9a-87d9-69718b2cdf61",
   "Version": "3.10.0.0",
-  "Name": "ToolbarLayer",
+  "Name": "ToobarScene",
   "Content": {
     "Content": {
       "Animation": {
@@ -12,7 +12,7 @@
       },
       "AnimationList": [],
       "ObjectData": {
-        "Tag": 38,
+        "Tag": 19,
         "Children": [
           {
             "FontSize": 14,
@@ -33,15 +33,15 @@
               "Plist": ""
             },
             "NormalFileData": {
-              "Type": "MarkedSubImage",
-              "Path": "movie_start_n.png",
-              "Plist": "Plist.plist"
+              "Type": "Normal",
+              "Path": "movie_start_N.png",
+              "Plist": ""
             },
             "Scale9Enable": true,
             "Scale9OriginX": 15,
             "Scale9OriginY": 11,
-            "Scale9Width": 90,
-            "Scale9Height": 98,
+            "Scale9Width": 610,
+            "Scale9Height": 178,
             "OutlineColor": {
               "G": 0,
               "B": 0
@@ -55,12 +55,12 @@
             "ShadowOffsetY": -2.0,
             "TouchEnable": true,
             "AnchorPoint": {
-              "ScaleX": 0.4937,
-              "ScaleY": 0.4518
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
             },
             "Position": {
-              "X": 320.0,
-              "Y": 480.0
+              "X": 327.9451,
+              "Y": 577.2963
             },
             "Scale": {
               "ScaleX": 1.0,
@@ -69,22 +69,22 @@
             "CColor": {},
             "IconVisible": false,
             "PrePosition": {
-              "X": 0.5,
-              "Y": 0.5
+              "X": 0.5124,
+              "Y": 0.6014
             },
             "PreSize": {
-              "X": 0.1875,
-              "Y": 0.125
+              "X": 0.7663,
+              "Y": 0.2009
             },
-            "LeftMargin": 260.756,
-            "RightMargin": 259.244,
-            "TopMargin": 414.216,
-            "BottomMargin": 425.784,
-            "Tag": 43,
-            "ActionTag": 1134683173,
+            "LeftMargin": 82.7365,
+            "RightMargin": 66.8463,
+            "TopMargin": 286.2653,
+            "BottomMargin": 480.8578,
+            "Tag": 25,
+            "ActionTag": 507586642,
             "Size": {
-              "X": 120.0,
-              "Y": 120.0
+              "X": 490.4172,
+              "Y": 192.877
             },
             "Name": "Button_start",
             "ctype": "ButtonObjectData"
@@ -103,20 +103,20 @@
               "Plist": ""
             },
             "PressedFileData": {
-              "Type": "MarkedSubImage",
-              "Path": "movie_play_S.png",
-              "Plist": "Plist.plist"
+              "Type": "Default",
+              "Path": "Default/Button_Press.png",
+              "Plist": ""
             },
             "NormalFileData": {
-              "Type": "MarkedSubImage",
-              "Path": "movie_peause_S.png",
-              "Plist": "Plist.plist"
+              "Type": "Normal",
+              "Path": "movie_play_S.png",
+              "Plist": ""
             },
             "Scale9Enable": true,
             "Scale9OriginX": 15,
             "Scale9OriginY": 11,
-            "Scale9Width": 30,
-            "Scale9Height": 38,
+            "Scale9Width": 104,
+            "Scale9Height": 90,
             "OutlineColor": {
               "G": 0,
               "B": 0
@@ -134,32 +134,32 @@
               "ScaleY": 1.0
             },
             "Position": {
-              "X": 620.0,
-              "Y": 840.0
+              "X": 618.6317,
+              "Y": 846.0352
             },
             "Scale": {
-              "ScaleX": 1.0,
-              "ScaleY": 1.0
+              "ScaleX": 0.5655,
+              "ScaleY": 0.6075
             },
             "CColor": {},
             "IconVisible": false,
             "PrePosition": {
-              "X": 0.9688,
-              "Y": 0.875
+              "X": 0.9666,
+              "Y": 0.8813
             },
             "PreSize": {
-              "X": 0.0938,
-              "Y": 0.0625
+              "X": 0.2094,
+              "Y": 0.1167
             },
-            "LeftMargin": 560.0,
-            "RightMargin": 20.0,
-            "TopMargin": 120.0,
-            "BottomMargin": 780.0,
-            "Tag": 44,
-            "ActionTag": -933138833,
+            "LeftMargin": 484.6317,
+            "RightMargin": 21.3683,
+            "TopMargin": 113.9648,
+            "BottomMargin": 734.0352,
+            "Tag": 26,
+            "ActionTag": 1490186004,
             "Size": {
-              "X": 60.0,
-              "Y": 60.0
+              "X": 134.0,
+              "Y": 112.0
             },
             "Name": "Button_movie",
             "ctype": "ButtonObjectData"
@@ -178,20 +178,20 @@
               "Plist": ""
             },
             "PressedFileData": {
-              "Type": "MarkedSubImage",
-              "Path": "mp3_pause.png",
-              "Plist": "Plist.plist"
+              "Type": "Normal",
+              "Path": "mp3_play.png",
+              "Plist": ""
             },
             "NormalFileData": {
-              "Type": "MarkedSubImage",
+              "Type": "Normal",
               "Path": "mp3_play.png",
-              "Plist": "Plist.plist"
+              "Plist": ""
             },
             "Scale9Enable": true,
             "Scale9OriginX": 15,
             "Scale9OriginY": 11,
-            "Scale9Width": 30,
-            "Scale9Height": 38,
+            "Scale9Width": 20,
+            "Scale9Height": 28,
             "OutlineColor": {
               "G": 0,
               "B": 0
@@ -206,101 +206,57 @@
             "TouchEnable": true,
             "StretchWidthEnable": true,
             "AnchorPoint": {
-              "ScaleX": 1.0,
-              "ScaleY": 1.0
+              "ScaleX": 0.56,
+              "ScaleY": 0.4627
             },
             "Position": {
-              "X": 620.032,
-              "Y": 920.0
+              "X": 581.9257,
+              "Y": 903.4117
             },
             "Scale": {
-              "ScaleX": 1.0,
-              "ScaleY": 1.0
+              "ScaleX": 1.54,
+              "ScaleY": 1.4621
             },
             "CColor": {},
             "IconVisible": false,
             "PrePosition": {
-              "X": 0.9688,
-              "Y": 0.9583
+              "X": 0.9093,
+              "Y": 0.9411
             },
             "PreSize": {
-              "X": 0.0938,
-              "Y": 0.0625
+              "X": 0.0794,
+              "Y": 0.0521
             },
-            "LeftMargin": 560.0,
-            "RightMargin": 19.968,
-            "TopMargin": 40.0,
-            "BottomMargin": 860.0,
-            "Tag": 45,
-            "ActionTag": -1451660542,
+            "LeftMargin": 553.455,
+            "RightMargin": 35.7045,
+            "TopMargin": 29.7213,
+            "BottomMargin": 880.2787,
+            "Tag": 27,
+            "ActionTag": 952553170,
             "Size": {
-              "X": 60.032,
-              "Y": 60.0
+              "X": 50.8405,
+              "Y": 50.0
             },
             "Name": "Button_mp3",
             "ctype": "ButtonObjectData"
-          },
-          {
-            "ProgressInfo": 56,
-            "ImageFileData": {
-              "Type": "Default",
-              "Path": "Default/LoadingBarFile.png",
-              "Plist": ""
-            },
-            "AnchorPoint": {},
-            "Position": {
-              "X": -0.0001,
-              "Y": 951.9985
-            },
-            "Scale": {
-              "ScaleX": 1.0,
-              "ScaleY": 1.0
-            },
-            "CColor": {
-              "R": 224,
-              "G": 224,
-              "B": 224
-            },
-            "IconVisible": false,
-            "PrePosition": {
-              "X": 0.0,
-              "Y": 0.9917
-            },
-            "PreSize": {
-              "X": 1.0,
-              "Y": 0.0083
-            },
-            "LeftMargin": -0.0001,
-            "RightMargin": 0.0001,
-            "TopMargin": 0.0015,
-            "BottomMargin": 951.9985,
-            "Tag": 6,
-            "ActionTag": -1025108890,
-            "Size": {
-              "X": 640.0,
-              "Y": 8.0
-            },
-            "Alpha": 204,
-            "Name": "LoadingBar_2",
-            "ctype": "LoadingBarObjectData"
           }
         ],
         "Size": {
-          "X": 640.0,
-          "Y": 960.0
+          "X": 960.0,
+          "Y": 640.0
         },
-        "Name": "Layer",
-        "ctype": "LayerObjectData"
+        "Name": "Scene",
+        "ctype": "SingleNodeObjectData"
       },
       "UsedResources": [
         "Default/Button_Disable.png",
         "Default/Button_Press.png",
-        "Default/LoadingBarFile.png",
-        "Plist.plist",
-        "Plist.png"
+        "movie_play_S.png",
+        "movie_start_N.png",
+        "mp3_play.png"
       ],
       "ctype": "GameFileData"
     }
   },
-  "Type": "Layer"
+  "Type": "Scene"
 }
