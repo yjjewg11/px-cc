@@ -4,60 +4,49 @@
 	<dict>
 		<key>frames</key>
 		<dict>
-			<key>movie_peause_S.png</key>
+			<key>Button_make.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{0,181},{60,60}}</string>
+				<string>{{0,0},{368,88}}</string>
 				<key>offset</key>
 				<string>{0,0}</string>
 				<key>rotated</key>
 				<false />
 				<key>sourceSize</key>
-				<string>{60,60}</string>
+				<string>{368,88}</string>
 			</dict>
-			<key>movie_play_S.png</key>
+			<key>Button_relpay.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{0,120},{60,61}}</string>
+				<string>{{368,0},{368,88}}</string>
 				<key>offset</key>
 				<string>{0,0}</string>
 				<key>rotated</key>
 				<false />
 				<key>sourceSize</key>
-				<string>{60,61}</string>
+				<string>{368,88}</string>
 			</dict>
-			<key>movie_start_n.png</key>
+			<key>Button_share.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{0,0},{120,120}}</string>
+				<string>{{736,0},{368,88}}</string>
 				<key>offset</key>
 				<string>{0,0}</string>
 				<key>rotated</key>
-				<false />
+				<true />
 				<key>sourceSize</key>
-				<string>{120,120}</string>
+				<string>{368,88}</string>
 			</dict>
-			<key>mp3_pause.png</key>
+			<key>album_bg.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{0,241},{60,60}}</string>
+				<string>{{824,0},{174,174}}</string>
 				<key>offset</key>
 				<string>{0,0}</string>
 				<key>rotated</key>
 				<false />
 				<key>sourceSize</key>
-				<string>{60,60}</string>
-			</dict>
-			<key>mp3_play.png</key>
-			<dict>
-				<key>frame</key>
-				<string>{{0,301},{60,60}}</string>
-				<key>offset</key>
-				<string>{0,0}</string>
-				<key>rotated</key>
-				<false />
-				<key>sourceSize</key>
-				<string>{60,60}</string>
+				<string>{174,174}</string>
 			</dict>
 		</dict>
 		<key>metadata</key>
@@ -69,12 +58,12 @@
 			<key>realTextureFileName</key>
 			<string>Plist.png</string>
 			<key>size</key>
-			<string>{128,512}</string>
+			<string>{1024,512}</string>
 		</dict>
 		<key>texture</key>
 		<dict>
 			<key>width</key>
-			<integer>128</integer>
+			<integer>1024</integer>
 			<key>height</key>
 			<integer>512</integer>
 		</dict>

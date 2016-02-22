@@ -56,15 +56,13 @@ var PlayPNGLayer = cc.Layer.extend({
     	//DorpAction.runAction(sushi);
     	ScaleRotateAction.runAction(sushi);
         //动画显示
-       // this.scheduleOnce(this.schedule_update,PxConfig.pngShowTime);
+        // this.scheduleOnce(this.schedule_update,PxConfig.pngShowTime);
         
         //定时销毁
-       // this.scheduleOnce(function(){this.schedule_delete_Sprite(sushi);},6);
+        // this.scheduleOnce(function(){this.schedule_delete_Sprite(sushi);},6);
         
     },
-    
-    
-    
+  
     
     
     /*
