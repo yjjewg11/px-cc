@@ -42,7 +42,7 @@ var PlayPNGLayer = cc.Layer.extend({
         this.addChild(sushi,index);
         
         this.spriteQueue.push(sushi);
-        this.modMovieItem(1,sushi);
+        this.modMovieItem(3,sushi);
         
 //        //动画显示
 //        this.scheduleOnce(this.schedule_update,4);
@@ -54,7 +54,8 @@ var PlayPNGLayer = cc.Layer.extend({
     //动画模板
     modMovieItem : function(type,sushi) { 
     	//DorpAction.runAction(sushi);
-    	ScaleRotateAction.runAction(sushi);
+    	//ScaleRotateAction.runAction(sushi);
+    	LongicAction.runAction(sushi);
         //动画显示
         // this.scheduleOnce(this.schedule_update,PxConfig.pngShowTime);
         
