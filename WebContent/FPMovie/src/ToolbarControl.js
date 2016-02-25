@@ -27,7 +27,7 @@ var ToolbarControl={
 		gameEnd:function(){
 		//	alert("gameEnd");
 			this.Button_movie.loadTextures("movie_play_S.png","movie_play_S.png","",ccui.Widget.PLIST_TEXTURE);
-			this.button_start.setVisible(true);
+			//this.button_start.setVisible(true);
 			  window.audio_mp3.pause();
 			LayerManage.showGameEndLayer();
 			this.isPlayGame=false;

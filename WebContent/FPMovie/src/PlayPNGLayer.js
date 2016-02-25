@@ -80,7 +80,6 @@ var PlayPNGLayer = cc.Layer.extend({
               y: size.height /4,
               rotation: 0
         });
-        
 
         this.addChild(text,11);      
     },
