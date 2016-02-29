@@ -5,7 +5,10 @@ var BackgroundLayer = cc.Layer.extend({
         //////////////////////////////
         // 1. super init first
         this._super();
-
+        var  gameEndLayer = ccs.load(res.BG_SeaBubble).node;  
+        this.addChild(gameEndLayer,10);
+        
+        return true;
         /////////////////////////////
         // 2. add a menu item with "X" image, which is clicked to quit the program
         //    you may modify it.

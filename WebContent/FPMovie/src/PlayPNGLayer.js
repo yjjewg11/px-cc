@@ -41,6 +41,9 @@ var PlayPNGLayer = cc.Layer.extend({
 
         this.addChild(sushi,index);
         
+        
+        var text=this.addTitle(obj,index);
+        sushi.pxItemNote=text;
         this.spriteQueue.push(sushi);
         this.modMovieItem(3,sushi);
         
@@ -73,7 +76,7 @@ var PlayPNGLayer = cc.Layer.extend({
      * */
     
     addTitle : function(title) {	
-    	var text = new cc.LabelTTF(title, "Arial", 38);      
+    	var text = new cc.LabelTTF(title.note, "Arial", 55);      
         var size = cc.winSize;
         text.attr({
         	  x: size.width / 4,
@@ -81,7 +84,8 @@ var PlayPNGLayer = cc.Layer.extend({
               rotation: 0
         });
 
-        this.addChild(text,11);      
+        this.addChild(text);     
+        return text;
     },
     //销毁已显示（精灵）图片
     schedule_delete_Sprite : function(spr) {
@@ -91,20 +95,27 @@ var PlayPNGLayer = cc.Layer.extend({
     	  spr.runAction(dorpAction);
     	 
     	//  spr.removeFromParent();
-    	   this.scheduleOnce(function(){ spr.removeFromParent();},3);
+    	   this.scheduleOnce(function(){ 
+    			if(spr.pxItemNote)spr.pxItemNote.removeFromParent();
+    		   spr.removeFromParent();
+    		   },1);
      
     }
     //获取图片列表，进行依次显示
     ,schedule_update : function() {
-    	
     	var popObj=this.spriteQueue.pop();
     
     	var list=getFPMovie.list.data;
+    	list[0].note="天空一朵云";
+    	list[1].note=null;
+    	list[2].note="小小小小小";
+    	list[3].note="爱我中华爱我中华爱我中华";
+    	list[4].note=null;
     	if(this.index<list.length){
     		//{"path":"http://img.wenjienet.com/fp/2016/69629a2a-54a7-49bc-9823-4b92e9c6423a.jpg@108h","address":null,"note":null},
     		
     		this.addMovieItem(list[this.index],this.index);
-    		this.addTitle(getFPMovie.data.title);
+    		
     		//this.addPNG1(data.list[this.index],this.index);
     		this.index++;
     		
@@ -112,7 +123,7 @@ var PlayPNGLayer = cc.Layer.extend({
     		 this.unschedule(this.schedule_update);
     		ToolbarControl.gameEnd();
     	}
-    	this.schedule_delete_Sprite(popObj );
+    	this.schedule_delete_Sprite(popObj);
         
     }
 });
