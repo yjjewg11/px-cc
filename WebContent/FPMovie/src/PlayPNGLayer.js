@@ -57,8 +57,8 @@ var PlayPNGLayer = cc.Layer.extend({
     //动画模板
     modMovieItem : function(type,sushi) { 
     	//DorpAction.runAction(sushi);
-    	//ScaleRotateAction.runAction(sushi);
-    	LongicAction.runAction(sushi);
+    	ScaleRotateAction.runAction(sushi);
+    	//LongicAction.runAction(sushi);
         //动画显示
         // this.scheduleOnce(this.schedule_update,PxConfig.pngShowTime);
         
