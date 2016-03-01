@@ -39,7 +39,6 @@ var ToolbarLayer = cc.Layer.extend({
         //绑定事件
         button_start.addTouchEventListener(function(sender,type){
         	if(type==ccui.Widget.TOUCH_ENDED){
-        		
         		ToolbarControl.gameStartOrReplay(button_start,Button_movie,button_mp3);
         	}
         	

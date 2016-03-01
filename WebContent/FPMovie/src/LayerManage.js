@@ -13,11 +13,9 @@ var LayerManage =  {
 			this.gameEndLayer.setVisible(true);
 		},
 		hideGameEndLayer:function(){
+			if(this.gameEndLayer==null)return;
 			this.gameEndLayer.setVisible(false);
-			if(this.gameEndLayer==null){
-				
-				return;
-			}
+			
 		//	this.gameEndLayer.removeFromParent();
 			//this.gameEndLayer=null;
 			//不生效

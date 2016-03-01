@@ -1,4 +1,43 @@
 var PlayPNGService = {
+		
+		/**
+		 * 根据模块key,获取运动效果
+		 * PlayPNGService.getMp3();
+		 * @returns
+		 */
+		getMp3:function(){
+		
+			return getFPMovie.data.mp3;
+		},
+		/**
+		 * 根据模块key,获取运动效果
+		 * PlayPNGService.getAction();
+		 * @returns
+		 */
+		getAction:function(){
+			var obj=PxTemplate[getFPMovie.data.template_key];
+			if(!obj){
+				alert("模版未定义,template_key="+getFPMovie.data.template_key);
+				return "";
+			}
+			return window[obj.action];
+		},
+		/**
+		 * 根据模块key,获取模版背景路径
+		 * PlayPNGService.getBackgroundPath();
+		 * @returns
+		 */
+		getBackgroundPath:function(){
+			
+			//getFPMovie.data.template_key="SeaBubble";
+		//	var path="res/SeaBubble/MainScene.json";
+			var obj=PxTemplate[getFPMovie.data.template_key];
+			if(!obj){
+				alert("模版未定义,template_key="+getFPMovie.data.template_key);
+				return "";
+			}
+			return obj.bglayer;
+		},
 		//no use
 		ajax_callback:function(callback){
 			if(getFPMovie.ResMsg.status!="success"){
