@@ -62,12 +62,20 @@ var ToolbarControl={
 		 * 电影开始播放,暂停
 		 */
 		gamePlayOrPause:function(button_start,Button_movie){
-			if(!cc.director.isPaused()&&this.isPlayGame){//暂停->播放
-				this.gamePause();
-			}else{
-				this.Button_movie.loadTextures("movie_pause_S.png","movie_pause_S.png","",ccui.Widget.PLIST_TEXTURE);
+			if(cc.director.isPaused()){//暂停->播放
+				if(!Button_movie)Button_movie=this.Button_movie;
+				Button_movie.loadTextures("movie_pause_S.png","movie_pause_S.png","",ccui.Widget.PLIST_TEXTURE);
+
+				
 				cc.director.resume();
 				this.isPlayGame=true;
+				return;
+			}else{//暂停或未播放
+				if(!this.isPlayGame){//未播放->播放
+					this.gameReplay();
+					return;
+				}
+				this.gamePause();//播放->暂停
 			}
 			
 		},
@@ -92,7 +100,7 @@ var ToolbarControl={
 			
 			this.button_start.setVisible(false);
 			this.isPlayGame=true;
-			ToolbarControl.bgAudioLoad(getFPMovie.data.mp3);
+			ToolbarControl.bgAudioLoad(PlayPNGService.getMp3());
 			if(this.mp3Mute==false){
 				ToolbarControl.bgAudioPlay();
 			}

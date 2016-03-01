@@ -11,7 +11,7 @@ function loadMovie(getFPMovie){
 	
 	/*
 	 * 
-	 * private Timestamp create_time;// 创建时间
+	private Timestamp create_time;// 创建时间
 	@Column
 	private String create_useruuid;// 创建人uuid
 	@Column
@@ -19,14 +19,21 @@ function loadMovie(getFPMovie){
 	@Column
 	private String title;// 家庭照片集合.128字符.XX的家
 	@Column
-	private String template;// 模版名
+	private String template_key;// 模版key
+	@Column
+	private String herald;// 封面.60字符()
 	@Column
 	private Long photo_count=0l;// 照片计数
 	@Column
 	private Integer status=0;//类型'0:发布,1:未发布.2:屏蔽',
+	@Column
+	private String photo_uuids;// 关联照片的uuid.不限制字符
 	 */
 	var title=getFPMovie.data.title;
 	var template=getFPMovie.data.template;
+	
+	
+
 	//alert(title);
 	/**
 	 * A brief explanation for "project.json":
@@ -92,6 +99,12 @@ function loadMovie(getFPMovie){
 	    // The game will be resized when browser size change
 	    cc.view.resizeWithBrowserSize(true);
 	    //load resources
+	    
+	    
+	
+		
+		g_resources.push(PlayPNGService.getBackgroundPath());
+		
 	    cc.LoaderScene.preload(g_resources, function () {
 	        cc.director.runScene(new MainScene());
 	       // cc.director.runScene(new MyActionScene());
