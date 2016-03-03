@@ -70,3 +70,17 @@ function getUrlParam(name) {
     var r = window.location.search.substr(1).match(reg);
     if (r != null) return unescape(r[2]); return null;
 }
+
+
+/**
+ * 获取图片全屏比例
+ * @param winSize
+ * @param imgSize
+ * @returns
+ */
+function getFullScale(winSize,imgSize){
+	 
+    var t1=winSize.width/imgSize.width;
+    var t2=winSize.height/imgSize.height;
+    return t1<t2?t1:t2;
+}
