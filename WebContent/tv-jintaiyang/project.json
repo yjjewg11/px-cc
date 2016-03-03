@@ -1,0 +1,21 @@
+{
+    "debugMode"     : 1,
+    "frameRate"     : 60,
+    "id"            : "gameCanvas",
+    "renderMode"    : 1,
+    "jsList"        : [
+    "src/resource.js",
+    "src/BackgroundLayer.js",
+     "src/ToolbarControl.js",
+      "src/ToolbarLayer.js",
+      "src/PlayPNGLayer.js",
+       "src/PlayPNGService.js",
+        "src/action/DorpAction.js",
+        "src/action/LongicAction.js",
+         "src/action/ScaleRotateAction.js",
+          "src/LayerManage.js",
+            "src/GameEndLayer.js",
+            "src/PNGLayer1.js",
+        "src/MainScene.js"
+    ]
+}
