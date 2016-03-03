@@ -57,8 +57,8 @@ var PlayPNGLayer = cc.Layer.extend({
     //动画模板
     modMovieItem : function(type,sushi) { 
     	//DorpAction.runAction(sushi);
-    	//ScaleRotateAction.runAction(sushi);
-    	LongicAction.runAction(sushi);
+    	ScaleRotateAction.runAction(sushi);
+    	//LongicAction.runAction(sushi);
         //动画显示
         // this.scheduleOnce(this.schedule_update,PxConfig.pngShowTime);
         
@@ -75,15 +75,22 @@ var PlayPNGLayer = cc.Layer.extend({
      * setString
      * */
     
-    addTitle : function(title) {	
-    	var text = new cc.LabelTTF(title.note, "Arial", 55);      
+    addTitle : function(obj) {
+    	var data=obj.note;
+    	var dataText;
+    	if(data!=null){
+    		   if(data.length==2){
+    			// data.setText(""+'\n');
+    		   }   	
+    		}   
+    	data=textEnter(data,18);
+    	var text = new cc.LabelTTF(data, "Arial", 30);      
         var size = cc.winSize;
         text.attr({
-        	  x: size.width / 4,
-              y: size.height /4,
+        	  x: size.width/2 ,
+              y: size.height /10,
               rotation: 0
         });
-
         this.addChild(text);     
         return text;
     },
@@ -106,9 +113,9 @@ var PlayPNGLayer = cc.Layer.extend({
     	var popObj=this.spriteQueue.pop();
     
     	var list=getFPMovie.list.data;
-    	list[0].note="天空一朵云";
+    	list[0].note="stop;可选。一个非负的整数，比要提取的子串的最后一个字符在 stringObject 中的位置多 1。如果省 略该参数，那么返回的子串会一直到字符串的结尾。";
     	list[1].note=null;
-    	list[2].note="小小小小小";
+    	list[2].note="小小小小小asssssssss";
     	list[3].note="爱我中华爱我中华爱我中华";
     	list[4].note=null;
     	if(this.index<list.length){

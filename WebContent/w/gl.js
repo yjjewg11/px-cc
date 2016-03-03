@@ -19,6 +19,25 @@ var G_register_Loader={
 		}
 }
 
+
+function textEnter(text,num){
+	if(!text)return;
+	var arr=[];
+	do{
+		if(text.length<=num){
+			arr.push(text);
+			text=null;
+		}else{
+			var tmp=text.substring(0,num);
+			arr.push(tmp);
+			text=text.substring(num,text.length);
+		}
+	}while(text)
+	
+	var enterText=arr.join("\n");
+	return enterText;
+}
+
 /**
  * 异步加载js
  * @param url
