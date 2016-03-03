@@ -9,6 +9,7 @@ var res = {
 		BG_SeaBubble : "res/SeaBubble/MainScene.json",
 		img_1 : "img/1.jpg",
 		img_2 : "img/2.png",
+		img_3 : "img/3.png",
 		GameEndScene : "res/gameEnd/GameEndScene.json"
 };
 

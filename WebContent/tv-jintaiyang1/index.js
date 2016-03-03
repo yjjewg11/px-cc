@@ -108,7 +108,7 @@ window.onload = function(){
 		//g_resources.push(PlayPNGService.getBackgroundPath());
 		
 	    cc.LoaderScene.preload(g_resources, function () {
-	        cc.director.runScene(new MainScene("ssss"));
+	        cc.director.runScene(new MainScene2());
 	       // cc.director.runScene(new MyActionScene());
 	       // PlayPNGService.loadFile();
 	    }, this);
