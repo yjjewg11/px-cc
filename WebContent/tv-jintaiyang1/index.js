@@ -114,5 +114,6 @@ window.onload = function(){
 	    }, this);
 	};
 	cc.game.run();
+	  window.audio_mp3.play();
 	
 };

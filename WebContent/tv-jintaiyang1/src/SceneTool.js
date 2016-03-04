@@ -3,7 +3,7 @@ var SceneTool = {
 		ind:0,
 		init:function(){
 			
-			setInterval("SceneTool.getNewVer()", 15000);
+			setInterval("SceneTool.getNewVer()", 60000);
 			
 			
 			var a=this.actionArray;

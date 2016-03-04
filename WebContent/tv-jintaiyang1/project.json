@@ -1,8 +1,9 @@
 {
     "debugMode"     : 1,
-    "frameRate"     : 60,
+    "frameRate"     : 8,
     "id"            : "gameCanvas",
-    "renderMode"    : 1,
+    "renderMode"    : 0,
+    "showFPS":false,
     "jsList"        : [
     "src/resource.js",
     "src/BackgroundLayer.js",
