@@ -1,12 +1,12 @@
 //层
-var Layer1 = cc.Layer.extend({
+var Layer5 = cc.Layer.extend({
     bgSprite:null,
     index:0,//当前图片索引
     spriteQueue:new ArrayQueue(),//保存需要释放内存的
     playPng:function(){
     	this.index=0;
     	
-    	  var sushi = new cc.Sprite(res.bgimg_1
+    	  var sushi = new cc.Sprite(res.bgimg_5
     			  );
     	  
     	  var size = cc.winSize;
@@ -28,19 +28,6 @@ var Layer1 = cc.Layer.extend({
           
           
           LongicAction.runAction(sushi);
-          
-          
-          this.scheduleOnce(function(){ 
-        	  
-        	// 转场特效持续两秒
-        	  var transitionTime = 2;
-        	  // 创建下一个场景
-        	  var nextScene = new MainScene2();
-        	  // 使用下一个场景创建转场特效场景
-        	  var transitionScene = new cc.TransitionProgressInOut(transitionTime, nextScene);
-        	  // 替换运行场景为转场特效场景
-        	  cc.director.runScene(transitionScene);
-          },4);
     },
     ctor:function () {
     	
@@ -51,5 +38,4 @@ var Layer1 = cc.Layer.extend({
        
         return true;
     }
-
 });

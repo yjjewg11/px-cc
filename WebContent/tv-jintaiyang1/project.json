@@ -9,6 +9,15 @@
      "src/ToolbarControl.js",
       "src/ToolbarLayer.js",
       "src/Layer1.js",
+      "src/Layer2.js",
+      "src/Layer3.js",
+      "src/Layer4.js",
+      "src/Layer5.js",
+      "src/Layer6.js",
+      "src/Layer7.js",
+      "src/Layer8.js",
+      "src/Layer9.js",
+      "src/Layer10.js",
        "src/PlayPNGService.js",
         "src/action/DorpAction.js",
         "src/action/LongicAction.js",
@@ -17,7 +26,14 @@
             "src/GameEndLayer.js",
                 "src/SceneTool.js",
              "src/MainScene1.js",
-               "src/MainScene2.js",
-        "src/MainScene.js"
+             "src/MainScene2.js",
+             "src/MainScene3.js",
+             "src/MainScene4.js",
+             "src/MainScene5.js",
+             "src/MainScene6.js",
+             "src/MainScene7.js",
+             "src/MainScene8.js",
+             "src/MainScene9.js",
+             "src/MainScene10.js"
     ]
 }
