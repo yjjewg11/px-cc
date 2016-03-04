@@ -40,11 +40,11 @@ var Layer6 = cc.Layer.extend({
           var allhight = sushi.getContentSize().height;
 //          alert("winSize="+size.width+"-"+size.height+"|img="+allwight+"-"+allhight+"="+getFullScale(size,sushi.getContentSize()));
           sushi.attr({
-          	  x: 684.42,
-                y: 487.90,
+          	  x: 383.09,
+                y: 477.64,
                 opacity:255,
-                scale:0.3080,
-                rotation: -12.68
+                scale:0.4537,
+                rotation: -13.88
           });
           this.addChild(sushi);
 //          this.modMovieItem(3,sushi);
@@ -72,11 +72,11 @@ var Layer6 = cc.Layer.extend({
 //       alert("winSize="+size.width+"-"+size.height+"|img="+allwight+"-"+allhight+"="+getFullScale(size,sushi.getContentSize()));
        
        sushi.attr({
-       	  x: 384.42,
-             y: 487.90,
+       	  x: 283.47,
+             y: 280.27,
              opacity:255,
-             scale:0.3080,
-             rotation: -12.68
+             scale:0.8809,
+             rotation: 12.80
        });
        
 
@@ -104,11 +104,11 @@ var Layer6 = cc.Layer.extend({
 //       alert("winSize="+size.width+"-"+size.height+"|img="+allwight+"-"+allhight+"="+getFullScale(size,sushi.getContentSize()));
        
        sushi.attr({
-       	  x: 384.42,
-             y: 487.90,
+       	  x: 759.04,
+             y: 567.86,
              opacity:255,
-             scale:0.3080,
-             rotation: -12.68
+             scale:0.9436,
+             rotation: 0
        });
        
 
@@ -136,11 +136,11 @@ var Layer6 = cc.Layer.extend({
 //       alert("winSize="+size.width+"-"+size.height+"|img="+allwight+"-"+allhight+"="+getFullScale(size,sushi.getContentSize()));
        
        sushi.attr({
-       	  x: 384.42,
-             y: 487.90,
+       	  x: 1018.45,
+             y: 522.75,
              opacity:255,
-             scale:0.3080,
-             rotation: -12.68
+             scale:0.8475,
+             rotation: 27.99
        });
        
 
@@ -167,11 +167,11 @@ var Layer6 = cc.Layer.extend({
 //          alert("winSize="+size.width+"-"+size.height+"|img="+allwight+"-"+allhight+"="+getFullScale(size,sushi.getContentSize()));
           
           sushi.attr({
-          	  x: 384.42,
-                y: 487.90,
+          	  x: 424.45,
+                y: 124.25,
                 opacity:255,
-                scale:0.3080,
-                rotation: -12.68
+                scale:0.2777,
+                rotation: 8.61
           });
           
 

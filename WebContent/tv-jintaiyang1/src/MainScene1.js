@@ -75,11 +75,11 @@ var Layer1 = cc.Layer.extend({
     	  var allwight = sushi.getContentSize().width;
           var allhight = sushi.getContentSize().height;       
           sushi.attr({
-          	  x: 384.42,
-                y: 487.90,
+          	  x: 1017.45,
+                y: 294.54,
                 opacity:255,
                 scale:0.3080,
-                rotation: -12.68
+                rotation: 13.14
           });
           
 
@@ -102,11 +102,11 @@ var Layer1 = cc.Layer.extend({
     	  var allwight = sushi.getContentSize().width;
           var allhight = sushi.getContentSize().height;       
           sushi.attr({
-          	  x: 384.42,
-                y: 487.90,
+          	  x: 790.36,
+                y: 151.45,
                 opacity:255,
-                scale:0.3080,
-                rotation: -12.68
+                scale:0.3180,
+                rotation: -11.75
           });
           
 
