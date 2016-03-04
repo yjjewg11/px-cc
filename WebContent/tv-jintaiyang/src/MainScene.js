@@ -3,12 +3,9 @@ var MainScene = cc.Scene.extend({
         this._super();
         LayerManage.setMainScene(this);
         LayerManage.addBackgroundLayer();
-        
-        this.playPNGLayer = new Layer1();
-		this.addChild(this.playPNGLayer,11);
-		
        // LayerManage.addToolbarLayer();
+        
+        this.pNGLayer1=new PNGLayer1();
+		this.addChild( this.pNGLayer1,1);
     }
 });
-
-

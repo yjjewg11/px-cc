@@ -29,7 +29,10 @@ function loadMovie(getFPMovie){
 	@Column
 	private String photo_uuids;// 关联照片的uuid.不限制字符
 	 */
-
+	var title=getFPMovie.data.title;
+	var template=getFPMovie.data.template;
+	
+	
 
 	//alert(title);
 	/**
@@ -86,18 +89,17 @@ function loadMovie(getFPMovie){
 	 *
 	 */
 
-	
-	  
+
 }
 
 window.onload = function(){
 	cc.game.onStart = function(){
 	    
 	    // Setup the resolution policy and design resolution size
-		 cc.view.setDesignResolutionSize(1280,720, cc.ResolutionPolicy.SHOW_ALL);
+		 cc.view.setDesignResolutionSize(960,640, cc.ResolutionPolicy.SHOW_ALL);
 	    // Instead of set design resolution, you can also set the real pixel resolution size
 	    // Uncomment the following line and delete the previous line.
-	     cc.view.setRealPixelResolution(1280,720, cc.ResolutionPolicy.SHOW_ALL);
+	     cc.view.setRealPixelResolution(960,640, cc.ResolutionPolicy.SHOW_ALL);
 	    // The game will be resized when browser size change
 	    cc.view.resizeWithBrowserSize(true);
 	    //load resources
@@ -105,15 +107,15 @@ window.onload = function(){
 	    
 	
 		
-		//g_resources.push(PlayPNGService.getBackgroundPath());
-		
+	
 	    cc.LoaderScene.preload(g_resources, function () {
-	        cc.director.runScene(new MainScene1());
+	        cc.director.runScene(new MainScene());
 	       // cc.director.runScene(new MyActionScene());
 	       // PlayPNGService.loadFile();
 	    }, this);
 	};
 	cc.game.run();
-	  window.audio_mp3.play();
-	
-};
+	  
+
+
+          };
