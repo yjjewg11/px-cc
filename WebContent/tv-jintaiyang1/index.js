@@ -111,9 +111,10 @@ window.onload = function(){
 	        cc.director.runScene(new MainScene1());
 	       // cc.director.runScene(new MyActionScene());
 	       // PlayPNGService.loadFile();
+	        window.audio_mp3.play();
 	    }, this);
 	};
 	cc.game.run();
-	  window.audio_mp3.play();
+	
 	
 };
