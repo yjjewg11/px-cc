@@ -44,7 +44,7 @@ var ActionM ={
 				var seq=cc.sequence(
 						  cc.delayTime(2),
 						spawn,
-						   cc.delayTime(2),
+						   cc.delayTime(4),
 						   scaleTo0,
 			  		  cc.callFunc(function(){   sushi.removeFromParent();if(callback)callback();})
 			  		    );
