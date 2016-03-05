@@ -40,11 +40,11 @@ var Layer5 = cc.Layer.extend({
           var allhight = sushi.getContentSize().height;
 //          alert("winSize="+size.width+"-"+size.height+"|img="+allwight+"-"+allhight+"="+getFullScale(size,sushi.getContentSize()));
           sushi.attr({
-          	  x: 684.42,
-                y: 487.90,
+          	  x: 638.04,
+                y: 235.88,
                 opacity:255,
-                scale:0.3080,
-                rotation: -12.68
+                scale:1.1608,
+                rotation: 14.86
           });
           this.addChild(sushi);
 //          this.modMovieItem(3,sushi);
@@ -72,11 +72,11 @@ var Layer5 = cc.Layer.extend({
 //          alert("winSize="+size.width+"-"+size.height+"|img="+allwight+"-"+allhight+"="+getFullScale(size,sushi.getContentSize()));
           
           sushi.attr({
-          	  x: 384.42,
-                y: 487.90,
+          	  x: 937.87,
+                y: 464.95,
                 opacity:255,
-                scale:0.3080,
-                rotation: -12.68
+                scale:0.4456,
+                rotation:14.20
           });
           
 
@@ -101,11 +101,11 @@ var Layer5 = cc.Layer.extend({
 //          alert("winSize="+size.width+"-"+size.height+"|img="+allwight+"-"+allhight+"="+getFullScale(size,sushi.getContentSize()));
           
           sushi.attr({
-          	  x: 384.42,
-                y: 487.90,
+          	  x: 483.08,
+                y: 554.23,
                 opacity:255,
-                scale:0.3080,
-                rotation: -12.68
+                scale:1.1388,
+                rotation: -6.04
           });
           
 
@@ -133,11 +133,11 @@ var Layer5 = cc.Layer.extend({
 //          alert("winSize="+size.width+"-"+size.height+"|img="+allwight+"-"+allhight+"="+getFullScale(size,sushi.getContentSize()));
           
           sushi.attr({
-          	  x: 384.42,
-                y: 487.90,
+          	  x: 939.54,
+                y: 165.14,
                 opacity:255,
-                scale:0.3080,
-                rotation: -12.68
+                scale:1.0455,
+                rotation: 12.81
           });
           
 

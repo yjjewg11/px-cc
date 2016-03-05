@@ -85,8 +85,6 @@ function loadMovie(getFPMovie){
 	 }
 	 *
 	 */
-
-	
 	  
 }
 

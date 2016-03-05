@@ -40,11 +40,11 @@ var Layer10 = cc.Layer.extend({
           var allhight = sushi.getContentSize().height;
 //          alert("winSize="+size.width+"-"+size.height+"|img="+allwight+"-"+allhight+"="+getFullScale(size,sushi.getContentSize()));
           sushi.attr({
-          	  x: 684.42,
-                y: 487.90,
+          	  x: 265.86,
+                y: 381.04,
                 opacity:255,
-                scale:0.3080,
-                rotation: -12.68
+                scale:0.9243,
+                rotation: 0
           });
           this.addChild(sushi);
 //          this.modMovieItem(3,sushi);
@@ -68,10 +68,10 @@ var Layer10 = cc.Layer.extend({
 //          alert("winSize="+size.width+"-"+size.height+"|img="+allwight+"-"+allhight+"="+getFullScale(size,sushi.getContentSize()));
           
           sushi.attr({
-          	  x: 384.42,
-                y: 487.90,
+          	  x: 516.73,
+                y: 379.31,
                 opacity:255,
-                scale:0.3080,
+                scale:0.1824,
                 rotation: -12.68
           });
           
@@ -97,11 +97,11 @@ var Layer10 = cc.Layer.extend({
 //          alert("winSize="+size.width+"-"+size.height+"|img="+allwight+"-"+allhight+"="+getFullScale(size,sushi.getContentSize()));
           
           sushi.attr({
-          	  x: 384.42,
-                y: 487.90,
+          	  x: 765.13,
+                y: 375.99,
                 opacity:255,
-                scale:0.3080,
-                rotation: -12.68
+                scale:0.8874,
+                rotation: 0
           });
           
 
@@ -126,11 +126,11 @@ var Layer10 = cc.Layer.extend({
 //          alert("winSize="+size.width+"-"+size.height+"|img="+allwight+"-"+allhight+"="+getFullScale(size,sushi.getContentSize()));
           
           sushi.attr({
-          	  x: 384.42,
-                y: 487.90,
+          	  x: 1016.65,
+                y: 378.07,
                 opacity:255,
-                scale:0.3080,
-                rotation: -12.68
+                scale:0.8538,
+                rotation: 0
           });
           
 
@@ -155,11 +155,11 @@ var Layer10 = cc.Layer.extend({
 //          alert("winSize="+size.width+"-"+size.height+"|img="+allwight+"-"+allhight+"="+getFullScale(size,sushi.getContentSize()));
           
           sushi.attr({
-          	  x: 384.42,
-                y: 487.90,
+          	  x: 265.93,
+                y: 181.51,
                 opacity:255,
-                scale:0.3080,
-                rotation: -12.68
+                scale:0.2543,
+                rotation: 0
           });
           
 
@@ -184,11 +184,11 @@ var Layer10 = cc.Layer.extend({
 //          alert("winSize="+size.width+"-"+size.height+"|img="+allwight+"-"+allhight+"="+getFullScale(size,sushi.getContentSize()));
           
           sushi.attr({
-          	  x: 384.42,
-                y: 487.90,
+          	  x: 517.60,
+                y: 182.80,
                 opacity:255,
-                scale:0.3080,
-                rotation: -12.68
+                scale:0.2468,
+                rotation: 0
           });
           
 
@@ -213,11 +213,11 @@ var Layer10 = cc.Layer.extend({
 //          alert("winSize="+size.width+"-"+size.height+"|img="+allwight+"-"+allhight+"="+getFullScale(size,sushi.getContentSize()));
           
           sushi.attr({
-          	  x: 384.42,
-                y: 487.90,
+          	  x: 767.13,
+                y: 183.29,
                 opacity:255,
-                scale:0.3080,
-                rotation: -12.68
+                scale:0.2126,
+                rotation: 0
           });
           
 
@@ -244,11 +244,11 @@ var Layer10 = cc.Layer.extend({
 //          alert("winSize="+size.width+"-"+size.height+"|img="+allwight+"-"+allhight+"="+getFullScale(size,sushi.getContentSize()));
           
           sushi.attr({
-          	  x: 384.42,
-                y: 487.90,
+          	  x: 1013.99,
+                y: 184.44,
                 opacity:255,
-                scale:0.3080,
-                rotation: -12.68
+                scale:0.2391,
+                rotation:0
           });
           
 

@@ -13,26 +13,32 @@ var MainScene2 = cc.Scene.extend({
 });
 //层
 var Layer2 = cc.Layer.extend({
-    bgSprite:null,
-    index:0,//当前图片索引
-    spriteQueue:new ArrayQueue(),//保存需要释放内存的
-  //  nextScene:new MainScene1(),
-    
+
+    ctor:function () {
+    	
+        this._super();
+        
+        this.index=0;
+    	  var size = cc.winSize;
+      	  var sushi = new cc.Sprite(res.bgimg_2
+  		  );
+  //  alert("winSize="+size.width+"-"+size.height+"|img="+allwight+"-"+allhight+"="+getFullScale(size,sushi.getContentSize()));
+    sushi.attr({
+  	  x: size.width / 2,
+        y: size.height / 2,
+          opacity:255,
+          //scale:getFullScale(size,sushi.getContentSize()),
+          rotation: 0
+    });
+    this.addChild(sushi);
+        this.playPng1();
+        
+       
+        return true;
+    },
     
     playPng1:function(){
-    	this.index=0;
-  	  var size = cc.winSize;
-    	  var sushi = new cc.Sprite(res.bgimg_2
-		  );
-//  alert("winSize="+size.width+"-"+size.height+"|img="+allwight+"-"+allhight+"="+getFullScale(size,sushi.getContentSize()));
-  sushi.attr({
-	  x: size.width / 2,
-      y: size.height / 2,
-        opacity:255,
-        //scale:getFullScale(size,sushi.getContentSize()),
-        rotation: 0
-  });
-  this.addChild(sushi);
+    	
 //  return;
     	  var sushi = new cc.Sprite(res.img_4
     			  );
@@ -40,11 +46,11 @@ var Layer2 = cc.Layer.extend({
           var allhight = sushi.getContentSize().height;
 //          alert("winSize="+size.width+"-"+size.height+"|img="+allwight+"-"+allhight+"="+getFullScale(size,sushi.getContentSize()));
           sushi.attr({
-          	  x: 684.42,
-                y: 487.90,
+          	  x: 894.85,
+                y: 519.63,
                 opacity:255,
-                scale:0.3080,
-                rotation: -12.68
+                scale:0.4523,
+                rotation: -7.58
           });
           this.addChild(sushi);
 //          this.modMovieItem(3,sushi);
@@ -78,11 +84,11 @@ var Layer2 = cc.Layer.extend({
 //          alert("winSize="+size.width+"-"+size.height+"|img="+allwight+"-"+allhight+"="+getFullScale(size,sushi.getContentSize()));
           
           sushi.attr({
-          	  x: 384.42,
-                y: 487.90,
+          	  x: 634.99,
+                y: 173.41,
                 opacity:255,
-                scale:0.3080,
-                rotation: -12.68
+                scale:1.1601,
+                rotation: -8.91
           });
           
 
@@ -107,15 +113,16 @@ var Layer2 = cc.Layer.extend({
 //          alert("winSize="+size.width+"-"+size.height+"|img="+allwight+"-"+allhight+"="+getFullScale(size,sushi.getContentSize()));
           
           sushi.attr({
-          	  x: 384.42,
-                y: 487.90,
+          	  x:   307.57,
+                y: 176.89,
                 opacity:255,
-                scale:0.3080,
-                rotation: -12.68
+                scale:1.2141,
+                rotation: -8.54
           });
           
 
           this.addChild(sushi);
+           
 //          this.modMovieItem(3,sushi);
           // actionBy.reverse();
 //          delay.clone(),
@@ -140,11 +147,11 @@ var Layer2 = cc.Layer.extend({
 //          alert("winSize="+size.width+"-"+size.height+"|img="+allwight+"-"+allhight+"="+getFullScale(size,sushi.getContentSize()));
           
           sushi.attr({
-          	  x: 384.42,
-                y: 487.90,
+          	  x: 972.43,
+                y: 175.53,
                 opacity:255,
-                scale:0.3080,
-                rotation: -12.68
+                scale:1.1470,
+                rotation: -8.25
           });
           
 
@@ -157,14 +164,5 @@ var Layer2 = cc.Layer.extend({
           	};
           ActionM.runAction1(sushi,cb);
           return;      
-    },
-    ctor:function () {
-    	
-        this._super();
-        var size = cc.winSize;
-        this.playPng1();
-        
-       
-        return true;
-    },
+    }
 });

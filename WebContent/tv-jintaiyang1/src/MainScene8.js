@@ -40,11 +40,11 @@ var Layer8 = cc.Layer.extend({
           var allhight = sushi.getContentSize().height;
 //          alert("winSize="+size.width+"-"+size.height+"|img="+allwight+"-"+allhight+"="+getFullScale(size,sushi.getContentSize()));
           sushi.attr({
-          	  x: 684.42,
-                y: 487.90,
+          	  x: 928.22,
+                y: 353.58,
                 opacity:255,
-                scale:0.3080,
-                rotation: -12.68
+                scale:1,
+                rotation: 0
           });
           this.addChild(sushi);
 //          this.modMovieItem(3,sushi);
@@ -69,11 +69,11 @@ var Layer8 = cc.Layer.extend({
 //          alert("winSize="+size.width+"-"+size.height+"|img="+allwight+"-"+allhight+"="+getFullScale(size,sushi.getContentSize()));
           
           sushi.attr({
-          	  x: 384.42,
-                y: 487.90,
+          	  x: 431.97,
+                y: 270.87,
                 opacity:255,
-                scale:0.3080,
-                rotation: -12.68
+                scale:0.7769,
+                rotation: -13.79
           });
           
 
@@ -100,11 +100,11 @@ var Layer8 = cc.Layer.extend({
 //          alert("winSize="+size.width+"-"+size.height+"|img="+allwight+"-"+allhight+"="+getFullScale(size,sushi.getContentSize()));
           
           sushi.attr({
-          	  x: 384.42,
-                y: 487.90,
+          	  x: 928.23,
+                y: 128.01,
                 opacity:255,
-                scale:0.3080,
-                rotation: -12.68
+                scale:1,
+                rotation: 0
           });
           
 
