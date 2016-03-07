@@ -1,7 +1,7 @@
 
 var GameEndLayer = cc.Layer.extend({
     sprite:null,
-   
+   //Image_herald   LabelText
   
     ctor:function () {
         this._super();
@@ -36,7 +36,17 @@ var GameEndLayer = cc.Layer.extend({
         	
         });
         
+        var Image_herald = ccui.helper.seekWidgetByName(gameEndLayer, "Image_herald");
+        Image_herald.loadTexture("res/bgWarmSpring.png",0);
+    	
+        var Text_title = ccui.helper.seekWidgetByName(gameEndLayer, "Text_title");
+        Text_title.setText(getFPMovie.data.title);
+         
       
+//        var Image_herald1 = ccui.helper.seekWidgetByName(gameEndLayer, "Image_herald1");
+//        Image_herald1.setTexture("res/bgWarmSpring.png",0);
+//        
+        
         
         this.touchListener = cc.EventListener.create({
             event: cc.EventListener.TOUCH_ONE_BY_ONE,

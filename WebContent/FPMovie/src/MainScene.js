@@ -4,5 +4,6 @@ var MainScene = cc.Scene.extend({
         LayerManage.setMainScene(this);
         LayerManage.addBackgroundLayer();
         LayerManage.addToolbarLayer();
+        LayerManage.showGameEndLayer();
     }
 });
