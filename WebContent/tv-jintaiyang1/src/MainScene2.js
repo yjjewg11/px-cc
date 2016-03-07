@@ -31,6 +31,8 @@ var Layer2 = cc.Layer.extend({
           rotation: 0
     });
     this.addChild(sushi);
+
+		SceneTool.addKDLogo(this);
         this.playPng1();
         
        

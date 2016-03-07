@@ -43,7 +43,7 @@ var SceneTool = {
 		runNext:function(nextScene){
 			   
 			// 转场特效持续两秒
-      	  var transitionTime = 2;
+      	  var transitionTime = 1;
       	  // 创建下一个场景
 //      	  var nextScene = new MainScene2();
       	  // 使用下一个场景创建转场特效场景
@@ -64,6 +64,23 @@ var SceneTool = {
       		this.runNext(nextScene);
       	}
     	
+	},
+	//SceneTool.addKDLogo(sushi,layer)
+	addKDLogo:function(layer){
+		  var size = cc.winSize;
+		  var sushi = new cc.Sprite(res.jintaiyang_logo
+		  );
+		sushi.attr({
+			anchorX:1,
+			anchorY:1,
+		x: size.width,
+		y: size.height,
+		opacity:255,
+		//scale:getFullScale(size,sushi.getContentSize()),
+		rotation: 0
+		});
+		layer.addChild(sushi);
+
 	},
 	responseText:null,
 	getNewVer:function(){

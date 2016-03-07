@@ -33,6 +33,9 @@ var Layer1 = cc.Layer.extend({
         rotation: 0
   });
   this.addChild(sushi);
+  
+
+	SceneTool.addKDLogo(this);
  // return;
     	  var sushi = new cc.Sprite(res.img_1
     			  );
@@ -40,10 +43,10 @@ var Layer1 = cc.Layer.extend({
           var allhight = sushi.getContentSize().height;
 //          alert("winSize="+size.width+"-"+size.height+"|img="+allwight+"-"+allhight+"="+getFullScale(size,sushi.getContentSize()));
           sushi.attr({
-          	  x: 684.42,
+          	  x: 784.42,
                 y: 487.90,
                 opacity:255,
-                scale:0.3080,
+                scale:0.001,
                 rotation: -12.68
           });
           this.addChild(sushi);

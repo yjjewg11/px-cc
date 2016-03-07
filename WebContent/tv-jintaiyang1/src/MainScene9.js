@@ -33,6 +33,7 @@ var Layer9 = cc.Layer.extend({
         rotation: 0
   });
   this.addChild(sushi);
+  	SceneTool.addKDLogo(this);
 //  return;
     	  var sushi = new cc.Sprite(res.img_30
     			  );

@@ -68,7 +68,8 @@ var PlayPNGLayer = cc.Layer.extend({
     },
   
     
-    
+    title_bg:null,
+	title_Label:null,
     /*
      *创建文本内容 
      * 
@@ -78,21 +79,81 @@ var PlayPNGLayer = cc.Layer.extend({
     addTitle : function(obj) {
     	var data=obj.note;
     	var dataText;
-    	if(data!=null){
-    		   if(data.length==2){
-    			// data.setText(""+'\n');
-    		   }   	
-    		}   
-    	data=textEnter(data,18);
-    	var text = new cc.LabelTTF(data, "Arial", 30);      
-        var size = cc.winSize;
-        text.attr({
-        	  x: size.width/2 ,
-              y: size.height /10,
-              rotation: 0
+    	if(data==null){
+			if(this.title_bg){
+					this.title_bg.attr({
+					   opacity:0
+				});
+			}
+			 if( this.title_Label){
+				 this.title_Label.attr({
+					   opacity:0
+				});
+					  
+				}
+    		 return;  	
+    	}   
+    	 var size = cc.winSize;
+    	
+
+
+ 
+	if(this.title_bg==null){
+		this.title_bg = new cc.Sprite(res.text_bg);
+
+		
+     //   title_bg.setSize(cc.size(640,200));
+       // title_bg.setPosition(cc.p(640, 0));
+     //  title_bg.setContentSize(640,160);
+        this.title_bg.attr({
+				anchorX:0,
+			anchorY:0,
+        	  x: 0 ,
+              y: 0,
+			  scaleX:640,
+			  scaleY:180,
+			   opacity:125
         });
-        this.addChild(text);     
-        return text;
+        
+
+        this.addChild(this.title_bg);
+	}
+		
+        
+    	var dataArr=G_Tools.getStringSplitNumArr(data,18);
+		var data=dataArr.join('\n');
+		var title_bgHeight=35*dataArr.length+15;
+		this.title_bg.attr({
+				 scaleY:title_bgHeight,
+			   opacity:125
+        }); 
+
+	if(this.title_Label==null){
+		this.title_Label = new cc.Sprite(res.text_bg);
+
+		this.title_Label = new cc.LabelTTF(data, "Arial", 30);      
+			var size = cc.winSize;
+			this.title_Label.setContentSize(560,150);
+			this.title_Label.attr({
+					anchorX:0,
+					anchorY:0,
+					  x: 40 ,
+					  y: 0
+			});
+			this.addChild(this.title_Label);  
+
+
+	}else{
+			this.title_Label.setString(data);
+			this.title_Label.attr({
+				 
+			   opacity:255
+        });
+	}
+		
+
+    	   
+        return null;
     },
     //销毁已显示（精灵）图片
     schedule_delete_Sprite : function(spr) {
