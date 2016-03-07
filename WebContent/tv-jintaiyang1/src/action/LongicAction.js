@@ -28,8 +28,38 @@ var LongicAction ={
 
 //执行动画
 var ActionM ={
+		runAction2:function(sushi,callback) { 	
+			
+			  var size = cc.winSize;
+			  var scale=getFullScale(cc.winSize,sushi.getContentSize());
+			  
+			  
+				var action1=cc.moveTo(2, cc.p(size.width / 2, size.height / 2));
+			    var rotateBy = new cc.RotateBy(2, 0-sushi.rotation);  
+			    var scaleTo = new cc.ScaleTo(2, scale);  
+			    var spawn = new cc.Spawn([action1,scaleTo, rotateBy]);  
+			    
+			    
+			    var scaleTo0 = new cc.ScaleTo(2, 0);  
+				var seq=cc.sequence(
+						  cc.delayTime(2),
+						spawn,
+						   cc.delayTime(4),
+						   scaleTo0,
+			  		  cc.callFunc(function(){   sushi.removeFromParent();if(callback)callback();})
+			  		    );
+//					var seq=cc.sequence(
+//				  cc.delayTime(2),
+//					spawn,
+//					   cc.delayTime(2)
+//		  		    );
+			 sushi.runAction(seq);
+	    },
 	//运行动画.ActionM.runAction1(sushi);
 	runAction1:function(sushi,callback) { 	
+		
+		ActionM.runAction2(sushi,callback);
+		return;
 		
 		  var size = cc.winSize;
 		  var scale=getFullScale(cc.winSize,sushi.getContentSize());
