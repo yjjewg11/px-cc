@@ -1,0 +1,251 @@
+{
+  "ID": "a2ee0952-26b5-49ae-8bf9-4f1d6279b798",
+  "Version": "3.10.0.0",
+  "Name": "MainScene",
+  "Content": {
+    "Content": {
+      "Animation": {
+        "Duration": 0,
+        "Speed": 1.0,
+        "Timelines": [],
+        "ctype": "TimelineActionData"
+      },
+      "AnimationList": [],
+      "ObjectData": {
+        "Children": [
+          {
+            "FileData": {
+              "Type": "Normal",
+              "Path": "garden.png",
+              "Plist": ""
+            },
+            "BlendFunc": {
+              "Src": 770,
+              "Dst": 771
+            },
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 320.0,
+              "Y": 480.0
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.5,
+              "Y": 0.5
+            },
+            "PreSize": {
+              "X": 1.0,
+              "Y": 1.0
+            },
+            "HorizontalEdge": "LeftEdge",
+            "VerticalEdge": "TopEdge",
+            "Tag": 5,
+            "ActionTag": 953446860,
+            "Size": {
+              "X": 640.0,
+              "Y": 960.0
+            },
+            "Name": "Default",
+            "ctype": "SpriteObjectData"
+          },
+          {
+            "FileData": {
+              "Type": "Normal",
+              "Path": "16084.plist",
+              "Plist": ""
+            },
+            "BlendFunc": {
+              "Src": 774,
+              "Dst": 1
+            },
+            "AnchorPoint": {},
+            "Position": {
+              "X": -63.4645,
+              "Y": 463.9044
+            },
+            "Scale": {
+              "ScaleX": 0.8047,
+              "ScaleY": 0.8047
+            },
+            "RotationSkewX": 81.7317,
+            "RotationSkewY": 81.713,
+            "CColor": {},
+            "IconVisible": true,
+            "PrePosition": {
+              "X": -0.0992,
+              "Y": 0.4832
+            },
+            "PreSize": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "LeftMargin": -63.4645,
+            "RightMargin": 703.4645,
+            "TopMargin": 496.0956,
+            "BottomMargin": 463.9044,
+            "Tag": 16,
+            "ActionTag": -1212318664,
+            "Size": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "Name": "Particle_1",
+            "ctype": "ParticleObjectData"
+          },
+          {
+            "FileData": {
+              "Type": "Normal",
+              "Path": "16084.plist",
+              "Plist": ""
+            },
+            "BlendFunc": {
+              "Src": 774,
+              "Dst": 772
+            },
+            "AnchorPoint": {},
+            "Position": {
+              "X": 323.9567,
+              "Y": 1004.2206
+            },
+            "Scale": {
+              "ScaleX": 0.7396,
+              "ScaleY": 0.8707
+            },
+            "RotationSkewX": 5.1175,
+            "RotationSkewY": 5.1039,
+            "CColor": {},
+            "IconVisible": true,
+            "PrePosition": {
+              "X": 0.5062,
+              "Y": 1.0461
+            },
+            "PreSize": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "LeftMargin": 323.9567,
+            "RightMargin": 316.0433,
+            "TopMargin": -44.2206,
+            "BottomMargin": 1004.2206,
+            "Tag": 17,
+            "ActionTag": -28964196,
+            "Size": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "Name": "Particle_1_0",
+            "ctype": "ParticleObjectData"
+          },
+          {
+            "FileData": {
+              "Type": "Normal",
+              "Path": "16084.plist",
+              "Plist": ""
+            },
+            "BlendFunc": {
+              "Src": 774,
+              "Dst": 1
+            },
+            "AnchorPoint": {},
+            "Position": {
+              "X": 292.7139,
+              "Y": -30.7142
+            },
+            "Scale": {
+              "ScaleX": 0.7215,
+              "ScaleY": 0.8047
+            },
+            "RotationSkewX": 121.6668,
+            "RotationSkewY": 121.649,
+            "CColor": {},
+            "IconVisible": true,
+            "PrePosition": {
+              "X": 0.4574,
+              "Y": -0.032
+            },
+            "PreSize": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "LeftMargin": 292.7139,
+            "RightMargin": 347.2861,
+            "TopMargin": 990.7142,
+            "BottomMargin": -30.7142,
+            "Tag": 18,
+            "ActionTag": 479957569,
+            "Size": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "Name": "Particle_1_1",
+            "ctype": "ParticleObjectData"
+          },
+          {
+            "FileData": {
+              "Type": "Normal",
+              "Path": "16084.plist",
+              "Plist": ""
+            },
+            "BlendFunc": {
+              "Src": 774,
+              "Dst": 1
+            },
+            "AnchorPoint": {},
+            "Position": {
+              "X": 679.251,
+              "Y": 522.2844
+            },
+            "Scale": {
+              "ScaleX": 0.8047,
+              "ScaleY": 0.8047
+            },
+            "RotationSkewX": 81.7316,
+            "RotationSkewY": 81.7138,
+            "CColor": {},
+            "IconVisible": true,
+            "PrePosition": {
+              "X": 1.0613,
+              "Y": 0.544
+            },
+            "PreSize": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "LeftMargin": 679.251,
+            "RightMargin": -39.251,
+            "TopMargin": 437.7156,
+            "BottomMargin": 522.2844,
+            "Tag": 19,
+            "ActionTag": 1015382540,
+            "Size": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "Name": "Particle_1_2",
+            "ctype": "ParticleObjectData"
+          }
+        ],
+        "Size": {
+          "X": 640.0,
+          "Y": 960.0
+        },
+        "Name": "Scene",
+        "ctype": "SingleNodeObjectData"
+      },
+      "UsedResources": [
+        "16084.plist",
+        "garden.png"
+      ],
+      "ctype": "GameFileData"
+    }
+  },
+  "Type": "Scene"
+}

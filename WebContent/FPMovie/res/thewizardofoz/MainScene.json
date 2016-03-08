@@ -1,0 +1,633 @@
+{
+  "ID": "a2ee0952-26b5-49ae-8bf9-4f1d6279b798",
+  "Version": "3.10.0.0",
+  "Name": "MainScene",
+  "Content": {
+    "Content": {
+      "Animation": {
+        "Duration": 0,
+        "Speed": 1.0,
+        "Timelines": [],
+        "ctype": "TimelineActionData"
+      },
+      "AnimationList": [],
+      "ObjectData": {
+        "Children": [
+          {
+            "FileData": {
+              "Type": "Normal",
+              "Path": "thewizardofoz.png",
+              "Plist": ""
+            },
+            "Scale9OriginX": 211,
+            "Scale9OriginY": 316,
+            "Scale9Width": 218,
+            "Scale9Height": 328,
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 320.0,
+              "Y": 480.0
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.5,
+              "Y": 0.5
+            },
+            "PreSize": {
+              "X": 1.0,
+              "Y": 1.0
+            },
+            "Tag": 3,
+            "ActionTag": 1863615175,
+            "Size": {
+              "X": 640.0,
+              "Y": 960.0
+            },
+            "Name": "Image_1",
+            "ctype": "ImageViewObjectData"
+          },
+          {
+            "FileData": {
+              "Type": "Normal",
+              "Path": "yihaopao.plist",
+              "Plist": ""
+            },
+            "BlendFunc": {
+              "Src": 775,
+              "Dst": 1
+            },
+            "AnchorPoint": {},
+            "Position": {
+              "X": 459.7364,
+              "Y": 207.9784
+            },
+            "Scale": {
+              "ScaleX": 1.7334,
+              "ScaleY": 1.2843
+            },
+            "CColor": {},
+            "IconVisible": true,
+            "PrePosition": {
+              "X": 0.7183,
+              "Y": 0.2166
+            },
+            "PreSize": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "LeftMargin": 459.7364,
+            "RightMargin": 180.2636,
+            "TopMargin": 752.0216,
+            "BottomMargin": 207.9784,
+            "Tag": 5,
+            "ActionTag": 131368432,
+            "Size": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "Name": "Particle_2",
+            "ctype": "ParticleObjectData"
+          },
+          {
+            "FileData": {
+              "Type": "Normal",
+              "Path": "19338.plist",
+              "Plist": ""
+            },
+            "BlendFunc": {
+              "Src": 770,
+              "Dst": 1
+            },
+            "AnchorPoint": {},
+            "Position": {
+              "X": 150.4882,
+              "Y": 877.4434
+            },
+            "Scale": {
+              "ScaleX": 1.485,
+              "ScaleY": 0.5506
+            },
+            "RotationSkewX": -183.7883,
+            "RotationSkewY": -183.7941,
+            "CColor": {},
+            "IconVisible": true,
+            "PrePosition": {
+              "X": 0.2351,
+              "Y": 0.914
+            },
+            "PreSize": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "LeftMargin": 150.4882,
+            "RightMargin": 489.5118,
+            "TopMargin": 82.5566,
+            "BottomMargin": 877.4434,
+            "Tag": 6,
+            "ActionTag": 1323597647,
+            "Size": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "Name": "Particle_3",
+            "ctype": "ParticleObjectData"
+          },
+          {
+            "FileData": {
+              "Type": "Normal",
+              "Path": "yihaopao.plist",
+              "Plist": ""
+            },
+            "BlendFunc": {
+              "Src": 775,
+              "Dst": 1
+            },
+            "AnchorPoint": {},
+            "Position": {
+              "X": 342.7871,
+              "Y": 240.7459
+            },
+            "Scale": {
+              "ScaleX": 0.8698,
+              "ScaleY": 0.8698
+            },
+            "CColor": {},
+            "IconVisible": true,
+            "PrePosition": {
+              "X": 0.5356,
+              "Y": 0.2508
+            },
+            "PreSize": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "LeftMargin": 342.7871,
+            "RightMargin": 297.2129,
+            "TopMargin": 719.254,
+            "BottomMargin": 240.7459,
+            "Tag": 7,
+            "ActionTag": 1459977841,
+            "Size": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "Name": "Particle_2_0",
+            "ctype": "ParticleObjectData"
+          },
+          {
+            "FileData": {
+              "Type": "Normal",
+              "Path": "19338.plist",
+              "Plist": ""
+            },
+            "BlendFunc": {
+              "Src": 770,
+              "Dst": 1
+            },
+            "AnchorPoint": {},
+            "Position": {
+              "X": 461.602,
+              "Y": 655.7728
+            },
+            "Scale": {
+              "ScaleX": 1.485,
+              "ScaleY": 0.5506
+            },
+            "RotationSkewX": -183.7883,
+            "RotationSkewY": -183.7942,
+            "CColor": {},
+            "IconVisible": true,
+            "PrePosition": {
+              "X": 0.7213,
+              "Y": 0.6831
+            },
+            "PreSize": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "LeftMargin": 461.602,
+            "RightMargin": 178.398,
+            "TopMargin": 304.2272,
+            "BottomMargin": 655.7728,
+            "Tag": 8,
+            "ActionTag": -258928250,
+            "Size": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "Name": "Particle_3_0",
+            "ctype": "ParticleObjectData"
+          },
+          {
+            "FileData": {
+              "Type": "Normal",
+              "Path": "19338.plist",
+              "Plist": ""
+            },
+            "BlendFunc": {
+              "Src": 770,
+              "Dst": 1
+            },
+            "AnchorPoint": {},
+            "Position": {
+              "X": 157.2449,
+              "Y": 696.4659
+            },
+            "Scale": {
+              "ScaleX": 1.485,
+              "ScaleY": 0.5506
+            },
+            "RotationSkewX": -183.7883,
+            "RotationSkewY": -183.7941,
+            "CColor": {},
+            "IconVisible": true,
+            "PrePosition": {
+              "X": 0.2457,
+              "Y": 0.7255
+            },
+            "PreSize": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "LeftMargin": 157.2449,
+            "RightMargin": 482.7551,
+            "TopMargin": 263.5341,
+            "BottomMargin": 696.4659,
+            "Tag": 9,
+            "ActionTag": -1813866593,
+            "Size": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "Name": "Particle_3_1",
+            "ctype": "ParticleObjectData"
+          },
+          {
+            "FileData": {
+              "Type": "Normal",
+              "Path": "19338.plist",
+              "Plist": ""
+            },
+            "BlendFunc": {
+              "Src": 770,
+              "Dst": 1
+            },
+            "AnchorPoint": {},
+            "Position": {
+              "X": 476.2512,
+              "Y": 950.3646
+            },
+            "Scale": {
+              "ScaleX": 1.485,
+              "ScaleY": 0.5506
+            },
+            "RotationSkewX": -183.7883,
+            "RotationSkewY": -183.7942,
+            "CColor": {},
+            "IconVisible": true,
+            "PrePosition": {
+              "X": 0.7441,
+              "Y": 0.99
+            },
+            "PreSize": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "LeftMargin": 476.2512,
+            "RightMargin": 163.7488,
+            "TopMargin": 9.6354,
+            "BottomMargin": 950.3646,
+            "Tag": 10,
+            "ActionTag": 1791278033,
+            "Size": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "Name": "Particle_3_2",
+            "ctype": "ParticleObjectData"
+          },
+          {
+            "FileData": {
+              "Type": "Normal",
+              "Path": "19338.plist",
+              "Plist": ""
+            },
+            "BlendFunc": {
+              "Src": 770,
+              "Dst": 1
+            },
+            "AnchorPoint": {},
+            "Position": {
+              "X": 516.9398,
+              "Y": 800.6289
+            },
+            "Scale": {
+              "ScaleX": 1.485,
+              "ScaleY": 0.5506
+            },
+            "RotationSkewX": -183.7883,
+            "RotationSkewY": -183.7942,
+            "CColor": {},
+            "IconVisible": true,
+            "PrePosition": {
+              "X": 0.8077,
+              "Y": 0.834
+            },
+            "PreSize": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "LeftMargin": 516.9398,
+            "RightMargin": 123.0602,
+            "TopMargin": 159.3711,
+            "BottomMargin": 800.6289,
+            "Tag": 11,
+            "ActionTag": -1361746432,
+            "Size": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "Name": "Particle_3_3",
+            "ctype": "ParticleObjectData"
+          },
+          {
+            "FileData": {
+              "Type": "Normal",
+              "Path": "19338.plist",
+              "Plist": ""
+            },
+            "BlendFunc": {
+              "Src": 770,
+              "Dst": 1
+            },
+            "AnchorPoint": {},
+            "Position": {
+              "X": 116.5569,
+              "Y": 945.4819
+            },
+            "Scale": {
+              "ScaleX": 1.485,
+              "ScaleY": 0.5506
+            },
+            "RotationSkewX": -183.7883,
+            "RotationSkewY": -183.7941,
+            "CColor": {},
+            "IconVisible": true,
+            "PrePosition": {
+              "X": 0.1821,
+              "Y": 0.9849
+            },
+            "PreSize": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "LeftMargin": 116.5569,
+            "RightMargin": 523.4431,
+            "TopMargin": 14.5181,
+            "BottomMargin": 945.4819,
+            "Tag": 12,
+            "ActionTag": -1502708303,
+            "Size": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "Name": "Particle_3_4",
+            "ctype": "ParticleObjectData"
+          },
+          {
+            "FileData": {
+              "Type": "Normal",
+              "Path": "yihaopao.plist",
+              "Plist": ""
+            },
+            "BlendFunc": {
+              "Src": 775,
+              "Dst": 1
+            },
+            "AnchorPoint": {},
+            "Position": {
+              "X": 101.643,
+              "Y": 368.8415
+            },
+            "Scale": {
+              "ScaleX": 1.0651,
+              "ScaleY": 0.8698
+            },
+            "CColor": {},
+            "IconVisible": true,
+            "PrePosition": {
+              "X": 0.1588,
+              "Y": 0.3842
+            },
+            "PreSize": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "LeftMargin": 101.643,
+            "RightMargin": 538.3569,
+            "TopMargin": 591.1585,
+            "BottomMargin": 368.8415,
+            "Tag": 13,
+            "ActionTag": 872677774,
+            "Size": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "Name": "Particle_2_1",
+            "ctype": "ParticleObjectData"
+          },
+          {
+            "FileData": {
+              "Type": "Normal",
+              "Path": "yihaopao.plist",
+              "Plist": ""
+            },
+            "BlendFunc": {
+              "Src": 775,
+              "Dst": 1
+            },
+            "AnchorPoint": {},
+            "Position": {
+              "X": 241.8768,
+              "Y": 429.5427
+            },
+            "Scale": {
+              "ScaleX": 0.349,
+              "ScaleY": 0.4792
+            },
+            "CColor": {},
+            "IconVisible": true,
+            "PrePosition": {
+              "X": 0.3779,
+              "Y": 0.4474
+            },
+            "PreSize": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "LeftMargin": 241.8768,
+            "RightMargin": 398.1232,
+            "TopMargin": 530.4573,
+            "BottomMargin": 429.5427,
+            "Tag": 14,
+            "ActionTag": 525997998,
+            "Size": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "Name": "Particle_2_1_0",
+            "ctype": "ParticleObjectData"
+          },
+          {
+            "FileData": {
+              "Type": "Normal",
+              "Path": "yihaopao.plist",
+              "Plist": ""
+            },
+            "BlendFunc": {
+              "Src": 775,
+              "Dst": 1
+            },
+            "AnchorPoint": {},
+            "Position": {
+              "X": 570.6516,
+              "Y": 195.1714
+            },
+            "Scale": {
+              "ScaleX": 1.5859,
+              "ScaleY": 1.9114
+            },
+            "CColor": {},
+            "IconVisible": true,
+            "PrePosition": {
+              "X": 0.8916,
+              "Y": 0.2033
+            },
+            "PreSize": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "LeftMargin": 570.6516,
+            "RightMargin": 69.3484,
+            "TopMargin": 764.8286,
+            "BottomMargin": 195.1714,
+            "Tag": 15,
+            "ActionTag": -137500106,
+            "Size": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "Name": "Particle_2_0_0",
+            "ctype": "ParticleObjectData"
+          },
+          {
+            "FileData": {
+              "Type": "Normal",
+              "Path": "yihaopao.plist",
+              "Plist": ""
+            },
+            "BlendFunc": {
+              "Src": 775,
+              "Dst": 1
+            },
+            "AnchorPoint": {},
+            "Position": {
+              "X": 314.6381,
+              "Y": 445.9334
+            },
+            "Scale": {
+              "ScaleX": 0.349,
+              "ScaleY": 0.4792
+            },
+            "CColor": {},
+            "IconVisible": true,
+            "PrePosition": {
+              "X": 0.4916,
+              "Y": 0.4645
+            },
+            "PreSize": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "LeftMargin": 314.6381,
+            "RightMargin": 325.3619,
+            "TopMargin": 514.0666,
+            "BottomMargin": 445.9334,
+            "Tag": 16,
+            "ActionTag": -853616997,
+            "Size": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "Name": "Particle_2_1_0_0",
+            "ctype": "ParticleObjectData"
+          },
+          {
+            "FileData": {
+              "Type": "Normal",
+              "Path": "yihaopao.plist",
+              "Plist": ""
+            },
+            "BlendFunc": {
+              "Src": 775,
+              "Dst": 1
+            },
+            "AnchorPoint": {},
+            "Position": {
+              "X": 320.7037,
+              "Y": 286.1305
+            },
+            "Scale": {
+              "ScaleX": 0.349,
+              "ScaleY": 0.4792
+            },
+            "CColor": {},
+            "IconVisible": true,
+            "PrePosition": {
+              "X": 0.5011,
+              "Y": 0.2981
+            },
+            "PreSize": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "LeftMargin": 320.7037,
+            "RightMargin": 319.2963,
+            "TopMargin": 673.8695,
+            "BottomMargin": 286.1305,
+            "Tag": 17,
+            "ActionTag": 1535614230,
+            "Size": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "Name": "Particle_2_1_0_1",
+            "ctype": "ParticleObjectData"
+          }
+        ],
+        "Size": {
+          "X": 640.0,
+          "Y": 960.0
+        },
+        "Name": "Scene",
+        "ctype": "SingleNodeObjectData"
+      },
+      "UsedResources": [
+        "19338.plist",
+        "thewizardofoz.png",
+        "yihaopao.plist",
+        "yihaopao.png"
+      ],
+      "ctype": "GameFileData"
+    }
+  },
+  "Type": "Scene"
+}

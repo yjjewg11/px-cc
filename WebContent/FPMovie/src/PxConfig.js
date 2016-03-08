@@ -4,11 +4,41 @@ var PxConfig={
 	//执行动画的时间(秒)
 	pngActionTime:4
 };
-
+//happybirthday thewizardofoz springblossoms happychilldhood garden happynewyear
 var PxTemplate={
 		//缺省
 		Default:{
 			bglayer:"res/SeaBubble/MainScene.json",
+			action:"LongicAction"
+		},
+		//新春快乐		
+		happynewyear:{
+			bglayer:"res/happynewyear/MainScene.json",
+			action:"LongicAction"
+		},
+		//迷幻公园		
+		garden:{
+			bglayer:"res/garden/MainScene.json",
+			action:"LongicAction"
+		},
+		//冬日萌熊		
+		happychilldhood:{
+			bglayer:"res/happychilldhood/MainScene.json",
+			action:"LongicAction"
+		},
+		//花香鸟语		
+		springblossoms:{
+			bglayer:"res/springblossoms/MainScene.json",
+			action:"LongicAction"
+		},
+		//魔境仙踪		
+		thewizardofoz:{
+			bglayer:"res/thewizardofoz/MainScene.json",
+			action:"LongicAction"
+		},
+		//生日快乐
+		happybirthday:{
+			bglayer:"res/happybirthday/MainScene.json",
 			action:"LongicAction"
 		},
 		//海底冒泡
