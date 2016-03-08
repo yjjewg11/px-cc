@@ -37,7 +37,9 @@ var GameEndLayer = cc.Layer.extend({
         });
         
         var Image_herald = ccui.helper.seekWidgetByName(gameEndLayer, "Image_herald");
-        Image_herald.loadTexture("res/bgWarmSpring.png",0);
+			G_register_Loader.regImgLoader(getFPMovie.data.herald);
+	
+        Image_herald.loadTexture(getFPMovie.data.herald,0);
     	
         var Text_title = ccui.helper.seekWidgetByName(gameEndLayer, "Text_title");
         Text_title.setText(getFPMovie.data.title);

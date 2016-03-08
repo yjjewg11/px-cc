@@ -174,11 +174,11 @@ var PlayPNGLayer = cc.Layer.extend({
     	var popObj=this.spriteQueue.pop();
     
     	var list=getFPMovie.list.data;
-    	list[0].note="stop;可选。一个非负的整数，比要提取的子串的最后一个字符在 stringObject 中的位置多 1。如果省 略该参数，那么返回的子串会一直到字符串的结尾。";
-    	list[1].note=null;
-    	list[2].note="小小小小小asssssssss";
-    	list[3].note="爱我中华爱我中华爱我中华";
-    	list[4].note=null;
+//    	list[0].note="stop;可选。一个非负的整数，比要提取的子串的最后一个字符在 stringObject 中的位置多 1。如果省 略该参数，那么返回的子串会一直到字符串的结尾。";
+//    	list[1].note=null;
+//    	list[2].note="小小小小小asssssssss";
+//    	list[3].note="爱我中华爱我中华爱我中华";
+//    	list[4].note=null;
     	if(this.index<list.length){
     		//{"path":"http://img.wenjienet.com/fp/2016/69629a2a-54a7-49bc-9823-4b92e9c6423a.jpg@108h","address":null,"note":null},
     		

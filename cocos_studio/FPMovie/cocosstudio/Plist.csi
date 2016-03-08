@@ -1,0 +1,13 @@
+<PlistInfoProjectFile>
+  <PropertyGroup Name="Plist" Type="Plist" ID="2af7f450-f4e1-4f7c-9854-4825e3e97749" Version="3.10.0.0" />
+  <Content ExportType="Png" SortAlgorithm="MaxRects" PicturePadding="0" AllowRotation="True" AllowAnySize="False" AllowTrim="False" ctype="PlistInfoData">
+    <ImageFiles>
+      <FilePathData Path="movie_peause_S.png" />
+      <FilePathData Path="movie_play_S.png" />
+      <FilePathData Path="movie_start_n.png" />
+      <FilePathData Path="mp3_pause.png" />
+      <FilePathData Path="mp3_play.png" />
+    </ImageFiles>
+    <MaxSize Width="1024" Height="1024" />
+  </Content>
+</PlistInfoProjectFile>

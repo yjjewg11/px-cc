@@ -1,0 +1,18 @@
+<Solution>
+  <PropertyGroup Name="px-cc-gameend" Version="3.10.0.0" Type="CocosStudio" />
+  <SolutionFolder>
+    <Group ctype="ResourceGroup">
+      <RootFolder Name=".">
+        <Image Name="album_bg.png" />
+        <Image Name="Button_make.png" />
+        <Image Name="Button_relpay.png" />
+        <Image Name="Button_share.png" />
+        <Project Name="GameEndScene.csd" Type="Scene" />
+        <Image Name="HelloWorld.png" />
+        <Project Name="MainScene.csd" Type="Scene" />
+        <PlistInfo Name="Plist.csi" Type="Plist" />
+        <Project Name="Scene.csd" Type="Scene" />
+      </RootFolder>
+    </Group>
+  </SolutionFolder>
+</Solution>
