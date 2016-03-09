@@ -32,7 +32,9 @@ function loadMovie(getFPMovie){
 	var title=getFPMovie.data.title;
 	var template=getFPMovie.data.template;
 	
-	
+	if(title){
+		window.document.title=title;
+	}
 
 	//alert(title);
 	/**

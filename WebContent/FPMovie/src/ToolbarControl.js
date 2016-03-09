@@ -37,13 +37,31 @@ var ToolbarControl={
 		 * 电影开始播放,暂停
 		 */
 		shareTo:function(){
-			alert("f分享");
+			
+			
+				var title=getFPMovie.data.title;
+				var content=title;
+				var imgurl=getFPMovie.data.herald;
+				var httpurl=window.location.href;
+				G_CallPhoneFN.setShareContent(title,content,imgurl,httpurl);
+
 		},
 		/**
 		 * ToolbarControl.gameEnd();
 		 * 电影开始播放,暂停
 		 */
 		makeMovie:function(){
+			if(window.JavaScriptCall){
+			
+				try{//新版本才支持
+				JavaScriptCall.makeFPMovie();
+				
+				return true;
+				}catch(e){
+						alert(title+":"+window.location.href);
+				}
+				
+			}
 			alert("制作一个");
 		},
 		/**

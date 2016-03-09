@@ -5,7 +5,7 @@ var ScaleRotateAction = {
     	sushi.setOpacity(255);
     	sushi.setScale(0);  
         var scaleTo = new cc.ScaleTo(PxConfig.pngActionTime, 1);  
-        var rotateBy = new cc.RotateBy(PxConfig.pngActionTime, 360, 0);  
+        var rotateBy = new cc.RotateBy(PxConfig.pngActionTime/2, 360, 0);  
         var spawn = new cc.Spawn(scaleTo, rotateBy);  
       
         sushi.runAction(spawn);

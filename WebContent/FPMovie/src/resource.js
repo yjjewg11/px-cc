@@ -1,11 +1,7 @@
 var res = {
 		Plist : "res/toobar/Plist.plist",
-		bgWarmSpring : "res/bgWarmSpring.png",
+		//bgWarmSpring : "res/bgWarmSpring.png",
 		text_bg : "res/text_bg.png",
-//		bgAudioPlay : "res/toobar/mp3_play.png",
-//		bgAudioPause : "res/toobar/mp3_pause.png",
-//		gamePlay : "res/toobar/movie_play_S.png",
-//		gamePause : "res/toobar/mp3_pause.png",
 		ToolbarLayer : "res/toobar/ToolbarLayer.json",
 		BG_SeaBubble : "res/SeaBubble/MainScene.json",
 		GameEndScene : "res/gameEnd/GameEndScene.json"

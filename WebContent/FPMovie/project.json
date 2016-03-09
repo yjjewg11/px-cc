@@ -4,17 +4,17 @@
     "id"            : "gameCanvas",
     "renderMode"    : 1,
     "jsList"        : [
-    "src/resource.js",
-    "src/BackgroundLayer.js",
-     "src/ToolbarControl.js",
-      "src/ToolbarLayer.js",
-      "src/PlayPNGLayer.js",
-       "src/PlayPNGService.js",
-        "src/action/DorpAction.js",
-        "src/action/LongicAction.js",
-         "src/action/ScaleRotateAction.js",
-          "src/LayerManage.js",
-            "src/GameEndLayer.js",
-        "src/MainScene.js"
+    "src/resource.js?v=160309",
+    "src/BackgroundLayer.js?v=160309",
+     "src/ToolbarControl.js?v=160309",
+      "src/ToolbarLayer.js?v=160309",
+      "src/PlayPNGLayer.js?v=160309",
+       "src/PlayPNGService.js?v=160309",
+        "src/action/DorpAction.js?v=160309",
+        "src/action/LongicAction.js?v=160309",
+         "src/action/ScaleRotateAction.js?v=160309",
+          "src/LayerManage.js?v=160309",
+            "src/GameEndLayer.js?v=160309",
+        "src/MainScene.js?v=160309"
     ]
 }

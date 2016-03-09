@@ -15,7 +15,7 @@ var PlayPNGService = {
 		 * @returns
 		 */
 		getAction:function(){
-			getFPMovie.data.template_key="happynewyear";
+			//getFPMovie.data.template_key="happynewyear";
 			var obj=PxTemplate[getFPMovie.data.template_key];
 			if(!obj){
 				alert("模版未定义,template_key="+getFPMovie.data.template_key);
@@ -29,7 +29,7 @@ var PlayPNGService = {
 		 * @returns
 		 */
 		getBackgroundPath:function(){
-			getFPMovie.data.template_key="happynewyear";
+			//getFPMovie.data.template_key="happynewyear";
 			//getFPMovie.data.template_key="SeaBubble";
 		//	var path="res/SeaBubble/MainScene.json";
 			var obj=PxTemplate[getFPMovie.data.template_key];

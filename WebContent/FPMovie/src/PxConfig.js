@@ -1,8 +1,8 @@
 var PxConfig={
 	//图片显示时间2秒
-	pngShowTime:5,
+	pngShowTime:4,
 	//执行动画的时间(秒)
-	pngActionTime:4
+	pngActionTime:2
 };
 //happybirthday thewizardofoz springblossoms happychilldhood garden happynewyear
 var PxTemplate={
