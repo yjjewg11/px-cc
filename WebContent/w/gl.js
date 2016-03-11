@@ -26,21 +26,26 @@ var G_Tools={
 	*"abdc"=>["ab","dc"]
 G_Tools.getStringSplitNumArr(text,num);
 	*/
-		getStringSplitNumArr:function(text,num){
-			if(!text)return [];
+		getStringSplitNumArr:function(text1,num,arr){
+			if(!text1)return [];
 			var arr=[];
-			do{
-				if(text.length<=num){
-					arr.push(text);
-					text=null;
-				}else{
-					var tmp=text.substring(0,num);
-					arr.push(tmp);
-					text=text.substring(num,text.length);
-				}
-			}while(text)
+			textArr=text1.split("\n");
 			
-			var enterText=arr.join("\n");
+			for(var i=0;i<textArr.length;i++){
+				var text=textArr[i];
+				do{
+					if(text.length<=num){
+						arr.push(text);
+						text=null;
+					}else{
+						var tmp=text.substring(0,num);
+						arr.push(tmp);
+						text=text.substring(num,text.length);
+					}
+				}while(text)
+			}
+			
+//			var enterText=arr.join("\n");
 			return arr;
 		}
 }

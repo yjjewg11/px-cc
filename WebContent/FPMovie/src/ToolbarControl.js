@@ -19,6 +19,8 @@ var ToolbarControl={
 			this.button_start=button_start;
 			this.Button_movie=Button_movie;
 			this.button_mp3=button_mp3;
+			
+			this.Button_movie.loadTextures("movie_play_S.png","movie_play_S.png","",ccui.Widget.PLIST_TEXTURE);
 		},
 		/**
 		 * ToolbarControl.gameEnd();
@@ -51,48 +53,42 @@ var ToolbarControl={
 		 * 电影开始播放,暂停
 		 */
 		makeMovie:function(){
-			if(window.JavaScriptCall){
-			
-				try{//新版本才支持
-				JavaScriptCall.makeFPMovie();
-				
-				return true;
-				}catch(e){
-						alert(title+":"+window.location.href);
-				}
-				
-			}
-			alert("制作一个");
+			var f=G_CallPhoneFN.makeFPMovie();
+			if(f)return true;	
+			window.location.href="http://www.wenjienet.com/";
 		},
 		/**
 		 * 暂停
 		 */
-		gamePause:function(button_start,Button_movie){
+		gamePause:function(){
 			if(!cc.director.isPaused()&&this.isPlayGame){//暂停->播放
 				this.Button_movie.loadTextures("movie_play_S.png","movie_play_S.png","",ccui.Widget.PLIST_TEXTURE);
     			cc.director.pause();	
     			this.isPlayGame=false;
+    			G_CallPhoneFN.exitFullScreen();
     		}
 			
 			
 		},
+		gameResume:function(){
+			this.Button_movie.loadTextures("movie_pause_S.png","movie_pause_S.png","",ccui.Widget.PLIST_TEXTURE);
+			cc.director.resume();
+			this.isPlayGame=true;
+			G_CallPhoneFN.fullScreen();
+		},
 		/**
 		 * 电影开始播放,暂停
 		 */
-		gamePlayOrPause:function(button_start,Button_movie){
+		gamePlayOrPause:function(){
 			if(cc.director.isPaused()){//暂停->播放
-				if(!Button_movie)Button_movie=this.Button_movie;
-				Button_movie.loadTextures("movie_pause_S.png","movie_pause_S.png","",ccui.Widget.PLIST_TEXTURE);
-
-				
-				cc.director.resume();
-				this.isPlayGame=true;
+				this.gameResume();
 				return;
 			}else{//暂停或未播放
 				if(!this.isPlayGame){//未播放->播放
 					this.gameReplay();
 					return;
 				}
+				G_CallPhoneFN.exitFullScreen();
 				this.gamePause();//播放->暂停
 			}
 			
@@ -107,13 +103,7 @@ var ToolbarControl={
 		/**
 		 * 重头播放或start
 		 */
-		gameStartOrReplay:function(button_start,Button_movie,button_mp3){			
-			//alert("game_replay");
-			if(button_start)this.button_start=button_start;
-			if(Button_movie)this.Button_movie=Button_movie;
-			if(button_mp3)this.button_mp3=button_mp3;
-			
-		
+		gameStartOrReplay:function(){			
 			this.Button_movie.loadTextures("movie_pause_S.png","movie_pause_S.png","",ccui.Widget.PLIST_TEXTURE);			
 			
 			this.button_start.setVisible(false);
@@ -130,7 +120,7 @@ var ToolbarControl={
 				  this.playPNGLayer = new PlayPNGLayer();
 				  scene.addChild(this.playPNGLayer,1);
 			}
-		
+			G_CallPhoneFN.fullScreen();
 			
 		},
 		/**

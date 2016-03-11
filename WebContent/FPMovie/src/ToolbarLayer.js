@@ -39,7 +39,7 @@ var ToolbarLayer = cc.Layer.extend({
         //绑定事件
         button_start.addTouchEventListener(function(sender,type){
         	if(type==ccui.Widget.TOUCH_ENDED){
-        		ToolbarControl.gameStartOrReplay(button_start,Button_movie,button_mp3);
+        		ToolbarControl.gameStartOrReplay();
         	}
         	
         });
@@ -48,7 +48,7 @@ var ToolbarLayer = cc.Layer.extend({
         //绑定事件
         Button_movie.addTouchEventListener(function(sender,type){
         	if(type==ccui.Widget.TOUCH_ENDED){
-        		ToolbarControl.gamePlayOrPause(button_start,Button_movie);
+        		ToolbarControl.gamePlayOrPause();
         	}
         	
         });
@@ -64,7 +64,7 @@ var ToolbarLayer = cc.Layer.extend({
                 var pos = touch.getLocation();
                 var target = event.getCurrentTarget();  
                 if ( cc.rectContainsPoint(target.getBoundingBox(),pos)) {
-                    cc.log("touched")
+//                    cc.log("touched")
                     return true;
                 }
                 return false;

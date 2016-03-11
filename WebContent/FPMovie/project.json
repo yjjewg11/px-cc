@@ -3,18 +3,19 @@
     "frameRate"     : 25,
     "id"            : "gameCanvas",
     "renderMode"    : 1,
+     "showFPS"    : false,
     "jsList"        : [
-    "src/resource.js?v=160309",
-    "src/BackgroundLayer.js?v=160309",
-     "src/ToolbarControl.js?v=160309",
-      "src/ToolbarLayer.js?v=160309",
-      "src/PlayPNGLayer.js?v=160309",
-       "src/PlayPNGService.js?v=160309",
-        "src/action/DorpAction.js?v=160309",
-        "src/action/LongicAction.js?v=160309",
-         "src/action/ScaleRotateAction.js?v=160309",
-          "src/LayerManage.js?v=160309",
-            "src/GameEndLayer.js?v=160309",
-        "src/MainScene.js?v=160309"
+    "src/resource.js?v=160311",
+    "src/BackgroundLayer.js?v=160311",
+     "src/ToolbarControl.js?v=160311",
+      "src/ToolbarLayer.js?v=160311",
+      "src/PlayPNGLayer.js?v=160311",
+       "src/PlayPNGService.js?v=160311",
+        "src/action/DorpAction.js?v=160311",
+        "src/action/LongicAction.js?v=160311",
+         "src/action/ScaleRotateAction.js?v=160311",
+          "src/LayerManage.js?v=160311",
+            "src/GameEndLayer.js?v=160311",
+        "src/MainScene.js?v=160311"
     ]
 }

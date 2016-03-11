@@ -4,7 +4,7 @@
 	<dict>
 		<key>frames</key>
 		<dict>
-			<key>movie_peause_S.png</key>
+			<key>movie_pause_S.png</key>
 			<dict>
 				<key>frame</key>
 				<string>{{0,181},{60,60}}</string>

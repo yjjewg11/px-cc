@@ -297,6 +297,40 @@ var G_CallPhoneFN={
 	 * 制作动态相册
 	 * @returns {Boolean}
 	 */
+	fullScreen:function(){
+		try{
+			G_CallPhoneFN.beforeCallPhone();
+			if(window.JavaScriptCall){
+				JavaScriptCall.fullScreen();
+				return true;
+			}
+		}catch(e){
+			  console.log('Exception:JavaScriptCall.fullScreen()=', e.message);
+		}
+		console.log('window.JavaScriptCall.fullScreen();');
+		return false;
+	},
+	/**
+	 * 制作动态相册
+	 * @returns {Boolean}
+	 */
+	exitFullScreen:function(){
+		try{
+			G_CallPhoneFN.beforeCallPhone();
+			if(window.JavaScriptCall){
+				JavaScriptCall.exitFullScreen();
+				return true;
+			}
+		}catch(e){
+			  console.log('Exception:JavaScriptCall.exitFullScreen()=', e.message);
+		}
+		console.log('window.JavaScriptCall.exitFullScreen();');
+		return false;
+	},
+	/**
+	 * 制作动态相册
+	 * @returns {Boolean}
+	 */
 	makeFPMovie:function(){
 		try{
 			G_CallPhoneFN.beforeCallPhone();

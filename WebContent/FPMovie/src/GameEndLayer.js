@@ -22,7 +22,7 @@ var GameEndLayer = cc.Layer.extend({
         //绑定事件
         Button_make.addTouchEventListener(function(sender,type){
         	if(type==ccui.Widget.TOUCH_ENDED){
-        		ToolbarControl.shareTo();
+        		ToolbarControl.makeMovie();
         	}
         	
         });
@@ -31,7 +31,7 @@ var GameEndLayer = cc.Layer.extend({
         //绑定事件
         Button_share.addTouchEventListener(function(sender,type){
         	if(type==ccui.Widget.TOUCH_ENDED){
-        		ToolbarControl.makeMovie();
+        		ToolbarControl.shareTo();
         	}
         	
         });
