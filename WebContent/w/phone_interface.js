@@ -123,7 +123,7 @@ var G_CallPhoneFN={
 				}
 				
 			}catch(e){
-				alert(title+":"+window.location.href);
+				alert(window.location.href);
 				  console.log('Exception:JavaScriptCall.finishProject()=', e.message);
 			}
 			console.log('window.finishProject==false');

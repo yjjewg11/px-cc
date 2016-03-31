@@ -55,7 +55,7 @@ var ToolbarControl={
 		makeMovie:function(){
 			var f=G_CallPhoneFN.makeFPMovie();
 			if(f)return true;	
-			window.location.href="http://www.wenjienet.com/";
+			window.location.href="http://www.wenjienet.com/down.html";
 		},
 		/**
 		 * 暂停
