@@ -28,9 +28,9 @@
               "Plist": ""
             },
             "PressedFileData": {
-              "Type": "Default",
-              "Path": "Default/Button_Press.png",
-              "Plist": ""
+              "Type": "MarkedSubImage",
+              "Path": "movie_play_S.png",
+              "Plist": "Plist.plist"
             },
             "NormalFileData": {
               "Type": "MarkedSubImage",
@@ -103,14 +103,14 @@
               "Plist": ""
             },
             "PressedFileData": {
-              "Type": "MarkedSubImage",
-              "Path": "movie_play_S.png",
-              "Plist": "Plist.plist"
+              "Type": "Default",
+              "Path": "Default/Button_Press.png",
+              "Plist": ""
             },
             "NormalFileData": {
-              "Type": "MarkedSubImage",
-              "Path": "movie_peause_S.png",
-              "Plist": "Plist.plist"
+              "Type": "Default",
+              "Path": "Default/Button_Normal.png",
+              "Plist": ""
             },
             "Scale9Enable": true,
             "Scale9OriginX": 15,
@@ -239,50 +239,6 @@
             },
             "Name": "Button_mp3",
             "ctype": "ButtonObjectData"
-          },
-          {
-            "ProgressInfo": 56,
-            "ImageFileData": {
-              "Type": "Default",
-              "Path": "Default/LoadingBarFile.png",
-              "Plist": ""
-            },
-            "AnchorPoint": {},
-            "Position": {
-              "X": -0.0001,
-              "Y": 951.9985
-            },
-            "Scale": {
-              "ScaleX": 1.0,
-              "ScaleY": 1.0
-            },
-            "CColor": {
-              "R": 224,
-              "G": 224,
-              "B": 224
-            },
-            "IconVisible": false,
-            "PrePosition": {
-              "X": 0.0,
-              "Y": 0.9917
-            },
-            "PreSize": {
-              "X": 1.0,
-              "Y": 0.0083
-            },
-            "LeftMargin": -0.0001,
-            "RightMargin": 0.0001,
-            "TopMargin": 0.0015,
-            "BottomMargin": 951.9985,
-            "Tag": 6,
-            "ActionTag": -1025108890,
-            "Size": {
-              "X": 640.0,
-              "Y": 8.0
-            },
-            "Alpha": 204,
-            "Name": "LoadingBar_2",
-            "ctype": "LoadingBarObjectData"
           }
         ],
         "Size": {
@@ -294,8 +250,8 @@
       },
       "UsedResources": [
         "Default/Button_Disable.png",
+        "Default/Button_Normal.png",
         "Default/Button_Press.png",
-        "Default/LoadingBarFile.png",
         "Plist.plist",
         "Plist.png"
       ],

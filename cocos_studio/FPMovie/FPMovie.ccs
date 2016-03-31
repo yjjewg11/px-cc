@@ -3,8 +3,7 @@
   <SolutionFolder>
     <Group ctype="ResourceGroup">
       <RootFolder Name=".">
-        <Image Name="garden.png" />
-        <Image Name="movie_peause_S.png" />
+        <Image Name="movie_pause_S.png" />
         <Image Name="movie_play_S.png" />
         <Image Name="movie_start_n.png" />
         <Image Name="mp3_pause.png" />

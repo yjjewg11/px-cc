@@ -1,6 +1,6 @@
 var PxConfig={
 	//图片显示时间2秒
-	pngShowTime:1,
+	pngShowTime:4,
 	//执行动画的时间(秒)
 	pngActionTime:2
 };

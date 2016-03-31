@@ -33,6 +33,7 @@ var ToolbarControl={
 			  window.audio_mp3.pause();
 			LayerManage.showGameEndLayer();
 			this.isPlayGame=false;
+			G_CallPhoneFN.exitFullScreen();
 		},
 		/**
 		 * ToolbarControl.gameEnd();

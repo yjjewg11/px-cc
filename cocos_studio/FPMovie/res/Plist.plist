@@ -4,17 +4,6 @@
 	<dict>
 		<key>frames</key>
 		<dict>
-			<key>movie_peause_S.png</key>
-			<dict>
-				<key>frame</key>
-				<string>{{0,181},{60,60}}</string>
-				<key>offset</key>
-				<string>{0,0}</string>
-				<key>rotated</key>
-				<false />
-				<key>sourceSize</key>
-				<string>{60,60}</string>
-			</dict>
 			<key>movie_play_S.png</key>
 			<dict>
 				<key>frame</key>
@@ -40,7 +29,7 @@
 			<key>mp3_pause.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{0,241},{60,60}}</string>
+				<string>{{0,181},{60,60}}</string>
 				<key>offset</key>
 				<string>{0,0}</string>
 				<key>rotated</key>
@@ -49,6 +38,17 @@
 				<string>{60,60}</string>
 			</dict>
 			<key>mp3_play.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{0,241},{60,60}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{60,60}</string>
+			</dict>
+			<key>movie_pause_S.png</key>
 			<dict>
 				<key>frame</key>
 				<string>{{0,301},{60,60}}</string>
