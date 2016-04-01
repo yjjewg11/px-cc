@@ -166,7 +166,9 @@
           },
           {
             "FontSize": 30,
-            "LabelText": "相册名",
+            "LabelText": "                   相册名                 ",
+            "HorizontalAlignmentType": "HT_Center",
+            "VerticalAlignmentType": "VT_Center",
             "OutlineColor": {
               "G": 0,
               "B": 0
@@ -178,13 +180,14 @@
             },
             "ShadowOffsetX": 2.0,
             "ShadowOffsetY": -2.0,
+            "ShadowEnabled": true,
             "AnchorPoint": {
-              "ScaleX": 0.5136,
-              "ScaleY": 0.4657
+              "ScaleX": 0.4997,
+              "ScaleY": 0.4879
             },
             "Position": {
-              "X": 320.0,
-              "Y": 500.0
+              "X": 319.103,
+              "Y": 502.2318
             },
             "Scale": {
               "ScaleX": 1.0,
@@ -193,21 +196,21 @@
             "CColor": {},
             "IconVisible": false,
             "PrePosition": {
-              "X": 0.5,
-              "Y": 0.5208
+              "X": 0.4986,
+              "Y": 0.5232
             },
             "PreSize": {
-              "X": 0.1406,
+              "X": 0.9844,
               "Y": 0.0312
             },
-            "LeftMargin": 273.776,
-            "RightMargin": 276.224,
-            "TopMargin": 443.971,
-            "BottomMargin": 486.029,
+            "LeftMargin": 4.3151,
+            "RightMargin": 5.6849,
+            "TopMargin": 442.4048,
+            "BottomMargin": 487.5952,
             "Tag": 11,
             "ActionTag": -441806731,
             "Size": {
-              "X": 90.0,
+              "X": 630.0,
               "Y": 30.0
             },
             "Name": "Text_title",

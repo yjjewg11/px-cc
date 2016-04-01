@@ -1,0 +1,13 @@
+<Solution>
+  <PropertyGroup Name="xiaoguo4" Version="3.10.0.0" Type="CocosStudio" />
+  <SolutionFolder>
+    <Group ctype="ResourceGroup">
+      <RootFolder Name=".">
+        <PlistParticleFile Name="12771.plist" />
+        <PlistParticleFile Name="17210.plist" />
+        <Project Name="MainScene.csd" Type="Scene" />
+        <Image Name="springblossoms.png" />
+      </RootFolder>
+    </Group>
+  </SolutionFolder>
+</Solution>

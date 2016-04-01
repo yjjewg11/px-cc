@@ -1,0 +1,16 @@
+<Solution>
+  <PropertyGroup Name="movie224" Version="3.10.0.0" Type="CocosStudio" />
+  <SolutionFolder>
+    <Group ctype="ResourceGroup">
+      <RootFolder Name=".">
+        <Image Name="balloon.png" />
+        <Image Name="balloon2.png" />
+        <Image Name="blue.png" />
+        <Image Name="green.png" />
+        <Project Name="MainScene.csd" Type="Scene" />
+        <Image Name="red.png" />
+        <Image Name="yellow.png" />
+      </RootFolder>
+    </Group>
+  </SolutionFolder>
+</Solution>

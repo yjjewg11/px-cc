@@ -36,14 +36,14 @@
             <OutlineColor A="255" R="255" G="0" B="0" />
             <ShadowColor A="255" R="110" G="110" B="110" />
           </AbstractNodeData>
-          <AbstractNodeData Name="Text_title" ActionTag="-441806731" Tag="11" IconVisible="False" LeftMargin="273.7760" RightMargin="276.2240" TopMargin="443.9710" BottomMargin="486.0290" FontSize="30" LabelText="相册名" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
-            <Size X="90.0000" Y="30.0000" />
-            <AnchorPoint ScaleX="0.5136" ScaleY="0.4657" />
-            <Position X="320.0000" Y="500.0000" />
+          <AbstractNodeData Name="Text_title" ActionTag="-441806731" Tag="11" IconVisible="False" LeftMargin="4.3151" RightMargin="5.6849" TopMargin="442.4048" BottomMargin="487.5952" FontSize="30" LabelText="                   相册名                 " HorizontalAlignmentType="HT_Center" VerticalAlignmentType="VT_Center" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ShadowEnabled="True" ctype="TextObjectData">
+            <Size X="630.0000" Y="30.0000" />
+            <AnchorPoint ScaleX="0.4997" ScaleY="0.4879" />
+            <Position X="319.1030" Y="502.2318" />
             <Scale ScaleX="1.0000" ScaleY="1.0000" />
             <CColor A="255" R="255" G="255" B="255" />
-            <PrePosition X="0.5000" Y="0.5208" />
-            <PreSize X="0.1406" Y="0.0313" />
+            <PrePosition X="0.4986" Y="0.5232" />
+            <PreSize X="0.9844" Y="0.0313" />
             <OutlineColor A="255" R="255" G="0" B="0" />
             <ShadowColor A="255" R="110" G="110" B="110" />
           </AbstractNodeData>
