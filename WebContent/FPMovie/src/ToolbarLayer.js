@@ -35,11 +35,20 @@ var ToolbarLayer = cc.Layer.extend({
         //暂停,开始按钮(左上).
         var Button_movie = ccui.helper.seekWidgetByName(toolbarLayer, "Button_movie");
         
-        ToolbarControl.bindWidget(button_start,Button_movie,button_mp3);
+        
+        
+        var loadImgTip = ccui.helper.seekWidgetByName(toolbarLayer, "loadImgTip");
+//        loadImgTip.setText(getFPMovie.data.title);
+        
+        
+        
+        ToolbarControl.bindWidget(button_start,Button_movie,button_mp3,loadImgTip);
+        
+    
         //绑定事件
         button_start.addTouchEventListener(function(sender,type){
         	if(type==ccui.Widget.TOUCH_ENDED){
-        		ToolbarControl.gameStartOrReplay();
+        		ToolbarControl.gameStartForPreload();
         	}
         	
         });

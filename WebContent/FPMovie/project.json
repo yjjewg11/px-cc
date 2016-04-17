@@ -5,16 +5,16 @@
     "renderMode"    : 1,
      "showFPS"    : false,
     "jsList"        : [
-    "src/resource.min.js?v=1603312",
-    "src/BackgroundLayer.min.js?v=1603312",
-     "src/ToolbarControl.min.js?v=1603312",
-      "src/ToolbarLayer.min.js?v=1603312",
-      "src/PlayPNGLayer.min.js?v=1603312",
-       "src/PlayPNGService.min.js?v=1603312",
+    "src/resource.min.js?v=160417",
+    "src/BackgroundLayer.min.js?v=160417",
+     "src/ToolbarControl.min.js?v=160417",
+      "src/ToolbarLayer.min.js?v=160417",
+      "src/PlayPNGLayer.min.js?v=160417",
+       "src/PlayPNGService.min.js?v=160417",
        
-        "src/action/LongicAction.min.js?v=1603312",
-          "src/LayerManage.min.js?v=1603312",
-            "src/GameEndLayer.min.js?v=1603312",
-        "src/MainScene.min.js?v=1603312"
+        "src/action/LongicAction.min.js?v=160417",
+          "src/LayerManage.min.js?v=160417",
+            "src/GameEndLayer.min.js?v=160417",
+        "src/MainScene.min.js?v=160417"
     ]
 }

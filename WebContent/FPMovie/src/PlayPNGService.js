@@ -45,11 +45,8 @@ var PlayPNGService = {
 				alert(getFPMovie.ResMsg.message);
 			}
 		},
-		/**
-		 * 加载文件
-		 * @param callback
-		 */
-		loadFile:function(){
+		//用于预加载
+		getLoadFilesArray:function(){
 			var fileArr=[];			
 			var list=getFPMovie.list.data;
 			for(var i=0;i<list.length;i++){
@@ -57,10 +54,58 @@ var PlayPNGService = {
 				G_register_Loader.regImgLoader(obj.path);
 				fileArr.push(obj.path);
 			}
+			return fileArr;
+		},
+		/**
+		 * 加载文件
+		 * @param callback
+		 */
+		loadFile:function(loadImgTip,callback){
+			var fileArr=[];		
+			
+			var list=getFPMovie.list.data;
+			
+			var total=list.length;
+			
+			loadImgTip.setText("加载图片 "+fileArr.length+"/"+total);
+			
+			for(var i=0;i<total;i++){
+				var obj=list[i];
+				G_register_Loader.regImgLoader(obj.path);
+				//fileArr.push(obj.path);
+				cc.loader.load(obj.path, function(err, results){
+					
+					fileArr.push(1);
+
+					loadImgTip.setText("加载图片 "+fileArr.length+"/"+total);
+					
+//		            alert("fileArr==="+fileArr.length);
+		             
+		            if(fileArr.length==total){
+		            	// alert("fileArr==="+fileArr.length);
+		            	 if(typeof callback=='function'){
+				            	callback();
+				            }
+		            }
+		           
+//		            if(err){
+//	                cc.log("加载图片失败");
+//	                return;
+//	            }
+				
+				  });
+
+				
+			}
+			return;
 			cc.loader.load(fileArr, function(err, results){
 	            if(err){
-	                cc.log("Failed to load  .");
+	                cc.log("加载图片失败");
 	                return;
+	            }
+	            alert("fileArr==="+fileArr.length);
+	            if(typeof callback=='function'){
+	            	callback();
 	            }
 	            
 			  });

@@ -6,6 +6,8 @@ var ToolbarControl={
 		Button_movie:null,
 		playPNGLayer :null,
 		button_mp3:null,
+		loadImgTip:null,
+		needLoadImgTip:true,
 		
 		//背景音乐静音
 		mp3Mute:false,
@@ -15,11 +17,11 @@ var ToolbarControl={
 		 * @param Button_movie
 		 * @param button_mp3
 		 */
-		bindWidget:function(button_start,Button_movie,button_mp3){			
+		bindWidget:function(button_start,Button_movie,button_mp3,loadImgTip){			
 			this.button_start=button_start;
 			this.Button_movie=Button_movie;
 			this.button_mp3=button_mp3;
-			
+			this.loadImgTip=loadImgTip;
 			this.Button_movie.loadTextures("movie_play_S.png","movie_play_S.png","",ccui.Widget.PLIST_TEXTURE);
 		},
 		/**
@@ -97,14 +99,40 @@ var ToolbarControl={
 		/**
 		 * 重头播放
 		 */
-		gameReplay:function(){			
+		gameReplay:function(){		
+			if( this.needLoadImgTip){
+				
+				this.gameStartForPreload();
+				return;
+			}
 			LayerManage.hideGameEndLayer();
 			this.gameStartOrReplay();
 		},
+		
+		/**
+		 * 开始前加载图片
+		 */
+		gameStartForPreload:function(){	
+			
+			var that=this; 
+//			this.loadImgTip.setText(getFPMovie.data.title);
+			this.loadImgTip.setVisible(true);
+			PlayPNGService.loadFile(this.loadImgTip, function () {
+				that.loadImgTip.setVisible(false);
+				  that.gameStartOrReplay();
+				  that.needLoadImgTip=false;
+			    });
+		
+			
+			
+		},
+		
 		/**
 		 * 重头播放或start
 		 */
-		gameStartOrReplay:function(){			
+		gameStartOrReplay:function(){		
+			
+			
 			this.Button_movie.loadTextures("movie_pause_S.png","movie_pause_S.png","",ccui.Widget.PLIST_TEXTURE);			
 			
 			this.button_start.setVisible(false);
@@ -122,6 +150,9 @@ var ToolbarControl={
 				  scene.addChild(this.playPNGLayer,1);
 			}
 			G_CallPhoneFN.fullScreen();
+			
+			
+			
 			
 		},
 		/**
