@@ -119,6 +119,25 @@ function loadMovie(getFPMovie){
 
 window.onload = function(){
 		var movie_uuid=getUrlParam("movie_uuid");
+		
+		
+		var kdmovie_uuid=getUrlParam("kdmovie_uuid");
+		//
+		if(kdmovie_uuid){
+			  PlayPNGService.loadPNGbykdmovie(kdmovie_uuid,function(){
+					 if(getFPMovie){
+							if(getFPMovie.ResMsg.status!="success"){
+								alert(getFPMovie.ResMsg.message);
+								return;
+							}
+							
+						 loadMovie(getFPMovie);
+					 }
+				 });
+				 
+			return;
+		}
+		
 		if(!movie_uuid)movie_uuid="1";
 	   PlayPNGService.loadPNG(movie_uuid,function(){
 			 if(getFPMovie){
