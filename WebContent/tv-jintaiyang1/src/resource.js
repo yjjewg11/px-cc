@@ -5,7 +5,7 @@ var res = {
 //		bgAudioPause : "res/toobar/mp3_pause.png",
 //		gamePlay : "res/toobar/movie_play_S.png",
 //		gamePause : "res/toobar/mp3_pause.png",		
-		ToolbarLayer : "res/toobar/ToolbarLayer.json",
+		ToolbarLayer : "res/toobar/ToolbarLayer2.json",
 		BG_SeaBubble : "res/SeaBubble/MainScene.json",
 		jintaiyang_logo : "bg_img/jintaiyang_logo.jpg",
 		bgimg_1 : "bg_img/bg1.jpg",

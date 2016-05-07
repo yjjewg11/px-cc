@@ -2,7 +2,7 @@ var res = {
 		Plist : "res/toobar/Plist.plist",
 		//bgWarmSpring : "res/bgWarmSpring.png",
 		text_bg : "res/text_bg.png",
-		ToolbarLayer : "res/toobar/ToolbarLayer.json",
+		ToolbarLayer : "res/toobar/ToolbarLayer2.json",
 		BG_SeaBubble : "res/SeaBubble/MainScene.json",
 		GameEndScene : "res/gameEnd/GameEndScene.json"
 };

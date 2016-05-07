@@ -117,11 +117,16 @@ var ToolbarControl={
 			var that=this; 
 //			this.loadImgTip.setText(getFPMovie.data.title);
 			this.loadImgTip.setVisible(true);
-			PlayPNGService.loadFile(this.loadImgTip, function () {
-				that.loadImgTip.setVisible(false);
+			if(typeof PlayPNGService.loadFile=='function'){
+				PlayPNGService.loadFile(this.loadImgTip, function () {
+					that.loadImgTip.setVisible(false);
+					  that.gameStartOrReplay();
+					  that.needLoadImgTip=false;
+				    });
+			}else{
 				  that.gameStartOrReplay();
-				  that.needLoadImgTip=false;
-			    });
+			}
+			
 		
 			
 			
