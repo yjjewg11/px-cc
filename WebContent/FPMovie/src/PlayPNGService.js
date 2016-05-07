@@ -116,7 +116,7 @@ var PlayPNGService = {
 		 * 加载数据
 		 */
 		loadPNGbykdmovie:function(movie_uuid,callback){
-			   var url="http://localhost/px-rest/rest/share/getFPMovie.js?kdmovie_uuid="+movie_uuid;//+"&t="+t;
+			   var url="http://kd.wenjienet.com/px-rest/rest/share/getFPMovie.js?kdmovie_uuid="+movie_uuid;//+"&t="+t;
 				 loadJS(url,callback);
 				 
 			//window.audio_mp3.play();
